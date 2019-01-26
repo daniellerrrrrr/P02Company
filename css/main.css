@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar:400,700|Work+Sans:400,700');
+/*
+  font sources:
+  https://fonts.google.com/specimen/Work+Sans
+  https://fonts.google.com/specimen/Eczar
+*/
+
+/* MAIN CSS USED ACROSS MOST PAGES */
+
+body{
+  background-color: #f6f2f0;
+  font-family: 'Work Sans', sans-serif;
+  margin:0 0 6rem;
+  overflow-wrap: break-word;
+}
+
+/* header styling */
+header{
+  background-color: #f5ece4;
+  padding-top:6rem;
+}
+
+header h1{
+  margin:auto;
+  width:80%;
+}
+
+.nav-container{ /* for link placement in navigation bars */
+  margin:auto;
+  width:80%;
+}
+
+/* navigation styling */
+.main-nav{
+  background-color: #e4d3c3;
+  font-size: 0.8rem;
+  width:100%;
+  margin-top: 1.5rem;
+}
+
+.nav-link{
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-right:1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.nav-link:last-child{
+   margin-right: 0;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus{
+  border-bottom: 2px solid;
+  color: #000;
+}
+
+.style-guide-nav{
+  background-color: #B1957D;
+  margin-top: 0;
+}
+
+.current-link{
+  border-bottom: 2px solid;
+}
+
+/* main page/content width styling */
+#interactive_elements, #page_template{
+  padding:1rem 0 2rem;
+  border-bottom: 2px  #b1957d solid;
+  margin:auto;
+  width:80%;
+}
+
+#text_elements, #combined_elements, #brand_information, #design_elements, #citations, #code_section{
+  padding:3rem 0 2rem;
+  border-bottom: 2px  #b1957d solid;
+  margin:auto;
+  width:80%;
+}
+
+section{
+  width: 100%;
+}
+
+.element{
+  margin: 0 0 3rem 0;
+  padding-bottom: 1rem;
+  width:100%;
+  border-bottom: 2px  #b1957d dotted;
+}
+
+.element:last-child{
+  border-bottom: none;
+}
+
+/* text, links, image styling */
+figure{
+  margin: 0;
+  display: inline-block;
+}
+
+h1{
+  font-family: 'Eczar', serif;
+  font-weight: 400;
+}
+
+h2, h3, h4{
+  font-family: 'Eczar', serif;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+p a, li a{
+  color: #b1957d;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+p a:hover, p a:active, p a:focus,
+li a:hover, a:active, a:focus{
+  color:#000;
+  border-bottom: 2px solid;
+}
+
+img{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-link a{
+  transition: 0.1s;
+  border-bottom: none;
+}
+
+.image-link a:hover, .image-link a:active, .image-link a:focus{
+  opacity: 0.75;
+  border-bottom: none;
+}
+
+/* form and input styling */
+label{
+  display: block;
+  margin: 0 1rem 0 0;
+  font-weight: bold;
+}
+
+input{
+  background-color: #fff;
+  border: 0;
+  padding: 0.5rem;
+  transition: 0.2s;
+  margin-top: 1rem;
+}
+
+input:hover, input:active, input:focus{
+  background-color: #E4D3C3;
+}
+
+input[type=text]{
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+input[type=radio]{
+  margin-bottom: 2rem;
+}
+
+.h1-example{
+  font-size: 2rem;
+  margin:0;
+  font-family: 'Eczar', serif;
+}
+
+code{
+  background-color: #e2e2e2;
+  padding:1rem;
+  display: block;
+}
+
+ul{
+  line-height: 1.75rem;
+  list-style-type: circle;
+  margin:0 0 1rem 0;
+}
+
+pre{
+  margin:0;
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+/* button styling */
+#example-buttons{ /*specifically for style guide*/
+  padding: 1rem;
+  width:20rem;
+  background-color: #E4D3C3;
+}
+
+button{
+  padding:1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  border:none;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  transition: 0.2s;
+}
+
+button:hover{
+  cursor:pointer;
+  box-shadow: 3px 3px #000;
+}
+
+button:active{
+  box-shadow: 6px 6px;
+}
+
+.reset-button{
+  background-color: #F5ECE4;
+  border: 1px transparent;
+}
+
+.submit-button{
+  background-color: #000;
+  color: #fff;
+  border-top: 1px transparent;
+  border-right: 1px #F5ECE4 solid;
+  border-bottom: 1px #F5ECE4 solid;
+  border-left: 1px transparent;
+  transition: 0.3s;
+}
+
+/* li styling instructions from https://css-tricks.com/custom-list-number-styling/ */
+ol{
+  line-height: 1.75rem;
+  list-style: none;
+  padding-left: 1.25rem;
+  margin-top: 0;
+}
+
+ol li{
+  counter-increment: list-counter;
+}
+
+ol li::before {
+  content: counter(list-counter) ". ";
+  font-weight: 700;
+  padding-right: 0.25rem;
+}
+
+/* style guide styling of example text and colours section */
+.font-example{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.eczar{
+  font-family: 'Eczar', serif;
+}
+
+.worksans{
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 2rem;
+}
+
+.bg-colour{
+  background-color: #f6f2f0;
+  border: 1px solid;
+}
+
+.text-colour{
+  background-color: #000;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.accent1-colour{
+  background-color: #F5ECE4;
+  border: 1px solid;
+}
+
+.accent2-colour{
+  background-color: #E4d3c3;
+  border: 1px solid transparent;
+}
+
+.accent3-colour{
+  background-color: #B1957D;
+  border: 1px solid transparent;
+}
+
+.accent4-colour{
+  background-color: #FFF;
+  border: 1px solid transparent;
+}
+
+.poster-inspiration{
+  max-width: 24rem;
+  padding:1rem;
+}
+
+/* PRODUCT PAGE  */
+.product-info{
+  width: inherit;
+}
+
+/* CART PAGE */
+.checkout-container{
+  height: 15em;
+  margin-bottom: 1rem;
+}
+
+.checkout-cart, .payment-form{
+  margin:0;
+}
+
+#total{ /* id for ol */
+  border-bottom: 2px  #b1957d dotted;
+  padding-bottom: 1rem;
+}
+
+.cart-total{
+  padding: 0 1rem 1rem 1rem;
+  background-color: #E4D3C3;
+}
+
+/* CHECKOUT PAGE */
+.payment-form h4{
+  margin-top:0;
+}

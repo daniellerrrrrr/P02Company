@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Solaris | Style Guide</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <!-- HEADER SECTION -->
+    <header>
+      <h1>Solaris</h1>
+
+      <nav class="main-nav">
+        <div class="nav-container">
+          <a class="nav-link current-link" href="#">Style Guide</a>
+          <a class="nav-link" href="shoes.html">Shoes</a>
+          <a class="nav-link" href="cart.html">Cart</a>
+          <a class="nav-link" href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+
+      <nav class="style-guide-nav">
+        <div class="nav-container">
+          <a class="nav-link" href="#interactive_elements">Interactive Elements</a>
+          <a class="nav-link" href="#text_elements">Text Elements</a>
+          <a class="nav-link" href="#combined_elements">Combined Elements</a>
+          <a class="nav-link" href="#design_elements">Design Elements</a>
+          <a class="nav-link" href="#brand_information">Brand Information</a>
+          <a class="nav-link" href="#citations">Citations</a>
+        </div>
+      </nav>
+    </header>
+    <!-- //END HEADER SECTION -->
+
+    <!-- INTERACTIVE ELEMENTS SECTION -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- In-text Link styling section -->
+      <section class="element">
+        <h3>Standard In-text Link</h3>
+        <p>This is a sentence. Here is a <a href="#">link.</a></p>
+
+        <h4>Code</h4>
+        <code>&lt;p&gt;This is a sentence. Here is a &lt;a href="#"&gt;link.&lt;/a&gt;&lt;/p&gt;</code>
+      </section>
+
+      <!-- Navigation Link styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+        <nav class="main-nav">
+          <div class="nav-container">
+            <a class="nav-link" href="#">Navigation Link</a>
+          </div>
+        </nav>
+
+        <h4>CSS Selectors</h4>
+        <p>.main-nav</p>
+        <p>.nav-container</p>
+        <p>.nav-link</p>
+
+        <h4>Code</h4>
+        <pre><code>&lt;nav class="main-nav"&gt;
+  &lt;div class="nav-container"&gt;
+    &lt;a class="nav-link" href="#"&gt;Navigation Link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+      </section>
+
+      <!-- Submit and Reset Button styling section -->
+      <section class="element">
+        <h3>Submit and Reset Buttons</h3>
+
+        <div id="example-buttons">
+          <button name="submit" class="submit-button">Submit</button>
+          <button name="reset" class="reset-button">Reset</button>
+        </div>
+
+        <h4>CSS Selectors</h4>
+        <p>.submit-button</p>
+        <p>.reset-button</p>
+
+        <h4>Code</h4>
+        <code>&lt;button name="submit" class="submit-button"&gt;Submit&lt;/button&gt;<br />
+        &lt;button name="reset" class="reset-button"&gt;Reset&lt;/button&gt;</code>
+      </section>
+
+      <!-- Text Input Field and Label styling section -->
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <form>
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name" placeholder="First name here"/>
+        </form>
+
+
+        <h4>Code</h4>
+        <code>&lt;label for="first_name&gt;First Name&lt;/label&gt;<br />
+          &lt;input type="text" name="first_name" id="first_name" placeholder="First name here"/&gt;
+        </code>
+      </section>
+
+      <!-- Radio Input Field and Label styling section -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <label>Shipping Option</label>
+        <input type="radio" name="shipping" id="standard_shipping" value="Standard Shipping"> Standard Shipping <br />
+        <input type="radio" name="shipping" id="express_shipping" value="Express Shipping"> Express Shipping
+
+        <h4>Code</h4>
+        <code>
+          &lt;label>Shipping Options&lt;/label&gt;<br />
+          &lt;input type="radio" name="shipping" id="standard_shipping" value="Standard Shipping"&gt; Standard Shipping <br />
+          &lt;input type="radio" name="shipping" id="express_shipping" value="Express Shipping"&gt; Express Shipping
+        </code>
+      </section>
+
+      <!-- Image as Link styling section -->
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <figure class="image-link">
+          <a href="#"><img src="images/shoes1.jpg" alt="two pairs of gray shoes on a gold background"/></a>
+
+          <figcaption>The Aurora series shoes from our newest collection.</figcaption>
+        </figure>
+
+        <h4>CSS Selectors</h4>
+        <p>.image-link</p>
+
+        <h4>Code</h4>
+        <pre><code>&lt;figure class="image-link"&gt;
+  &lt;a href="#"&gt;  &lt;img src="images/shoes1.jpg" alt="two pairs of gray shoes on a gold background"/&gt;  &lt;/a&gt;
+&lt;/figure&gt;</code></pre>
+      </section>
+    </section>
+    <!-- //END INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <!-- Header styling section -->
+      <section class="element">
+        <h3>Headings</h3>
+          <p class="h1-example">H1 header (Page Title)</p>
+          <h2>H2 header (Section Heading)</h2>
+          <h3>H3 header (Sub Section Heading)</h3>
+          <h4>H4 header (Secondary Sub Section Heading Heading)</h4>
+
+          <h4>Code</h4>
+          <code>
+            &lt;h1&gt;H1 header (Page Title)&lt;/h1&gt;<br />
+            &lt;h2&gt;H2 header (Section Heading)&lt;/h2&gt;<br />
+            &lt;h3&gt;H3 header (Sub Section Heading)&lt;/h3&gt;<br />
+            &lt;h4&gt;H4 header (Secondary Sub Section Heading Heading)&lt;/h4&gt;
+          </code>
+      </section>
+
+      <!-- Paragraph styling section -->
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac arcu libero. Pellentesque mattis tincidunt bibendum. Duis tincidunt dui at egestas ultricies. Mauris tincidunt, sapien sit amet mollis commodo, neque nulla facilisis tortor, ac porta eros sem vitae orci.</p>
+
+        <h4>Code</h4>
+        <code>
+          &lt;p&gt;This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac arcu libero. Pellentesque mattis tincidunt bibendum. Duis tincidunt dui at egestas ultricies. Mauris tincidunt, sapien sit amet mollis commodo, neque nulla facilisis tortor, ac porta eros sem vitae orci.&lt;/p&gt;
+        </code>
+      </section>
+
+      <!-- Numbered Lists styling section -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <ol>
+          <li>The Lunar Shoe</li>
+          <li>The Nebula Shoe</li>
+        </ol>
+
+        <h4>Code</h4>
+        <pre><code>&lt;ol&gt;
+    &lt;li>The Lunar Shoe&lt;/li&gt;
+    &lt;li>The Nebula Shoe&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+    <!-- COMBINED ELEMENTS SECTION -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <!-- Navigation styling -->
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="main-nav">
+          <div class="nav-container">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Shoes</a>
+            <a class="nav-link" href="#">Lookbook</a>
+            <a class="nav-link" href="#">About Solaris</a>
+          </div>
+        </nav>
+
+        <h4>Code</h4>
+        <pre><code>&lt;nav class="main-nav"&gt;
+  &lt;div class="nav-container"&gt;
+    &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Shoes&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Lookbook&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;About Solaris&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <!-- DESIGN ELEMENTS SECTION -->
+    <section id="design_elements">
+      <h2>Design Elements</h2>
+      <section class="element">
+        <h3>Fonts</h3>
+        <p class="font-example eczar">Eczar (Headings)</p>
+        <p class="display-header">regular and <strong>bold</strong></p>
+        <p>serif font for headings, <a href="https://fonts.google.com/specimen/Eczar">Google Fonts</a></p>
+
+        <p class="font-example worksans">Work Sans (Copy Text)</p>
+        <p>regular, <em>italicized</em>, and <strong>bold</strong></p>
+        <p>sans serif font for copy text, <a href="https://fonts.google.com/specimen/Work+Sans">Google Fonts</a></p>
+      </section>
+
+      <section class="element">
+        <h3>Colours</h3>
+
+        <div class="colours-container">
+          <div class="colour-block bg-colour">
+            <h4>Background</h4>
+            <p>HEX #F6F2F0</p>
+            <p>Main body background</p>
+          </div>
+
+          <div class="colour-block text-colour">
+            <h4>Text</h4>
+            <p>HEX #000000</p>
+            <p>Font color, link hover, button border</p>
+          </div>
+
+          <div class="colour-block accent1-colour">
+            <h4>Accent 1</h4>
+            <p>HEX #F5ECE4</p>
+            <p>Header background, secondary buttons</p>
+          </div>
+
+          <div class="colour-block accent2-colour">
+            <h4>Accent 2</h4>
+            <p>HEX #E4D3C3</p>
+            <p>Navigation bar, main buttons</p>
+          </div>
+
+          <div class="colour-block accent3-colour">
+            <h4>Accent 3</h4>
+            <p>HEX #B1957D</p>
+            <p>Section borders, link color</p>
+          </div>
+
+          <div class="colour-block accent4-colour">
+            <h4>Accent 4</h4>
+            <p>HEX #FFFFFF</p>
+            <p>Form backgrounds</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Images</h3>
+        <p>Some images to be used on product pages and throughout website.</p>
+
+        <div class="product-container">
+            <figure class="product on-style-guide"><img src="images/shoes5.jpg" alt="a model wearing a pair of black shoes"></figure>
+            <figure class="product on-style-guide"><img src="images/shoes4.jpg" alt="a model wearing a pair of black and teal boots"></figure>
+            <figure class="product on-style-guide"><img src="images/shoes10.jpg" alt="a model wearing a white sweater and white shoes"></figure>
+            <figure class="product on-style-guide"><img src="images/shoes2.jpg" alt="model's legs wearing gray boots"></figure>
+            <figure class="product on-style-guide"><img src="images/shoes6.jpg" alt="model wearing black dress and black boots"></figure>
+            <figure class="product on-style-guide"><img src="images/shoes3.jpg" alt="model's legs wearing red tights and gray boots"></figure>
+        </div>
+      </section>
+
+    </section>
+    <!-- // DESGIN ELEMENTS SECTION -->
+
+
+    <!-- BRAND INFORMATION SECTION -->
+    <section id="brand_information">
+      <h2>Brand Information</h2>
+
+      <section class="element">
+        <h3>What does the company do, or offer?</h3>
+        <p>Solaris is a (fictional) brand that produces classic and high quality space-exploration footwear.</p>
+
+        <h3>Who is the company to potential customers? (as a person)</h3>
+        <p>Solaris is a trusted provider of fashionable and long lasting pieces suitable for work, leisure, and formal occasions.</p>
+
+        <h3>Why might this company entice someone to purchase a product or service?</h3>
+        <h4>Customer identity</h4>
+          <ul>
+            <li>Space travellers/workers</li>
+            <li>Looking to spend money on the best quality pieces, created to last in terms of durability and style.</li>
+            <li>Want something more fashionable beyond standard issued equipment. Something for special events/spice up the everyday wardrobe</li>
+          </ul>
+      </section>
+
+      <section class="element">
+        <h3>Initial Inspiration</h3>
+        <ul>
+          <li>Retrofuturism</li>
+          <li>In a setting where people could travel through space or visit planets, what would they wear?</li>
+          <li>Unisex, minimalist fashion</li>
+          <li>NASA, <a href="https://www.jpl.nasa.gov/visions-of-the-future/">Visions of the Future</a> poster series:</li>
+        </ul>
+
+        <figure>
+          <img class="poster-inspiration" src="images/grandTour.jpg" alt="illustrated grand tour poster"/>
+          <img class="poster-inspiration" src="images/Nightlife.jpg" alt="illustrated nightlife poster"/>
+          <img class="poster-inspiration" src="images/Venus.jpg" alt="illustrated venus poster"/>
+        </figure>
+      </section>
+  </section>
+    <!-- // BRANDING ELEMENTS SECTION -->
+
+
+    <!-- CITATIONS SECTION -->
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from canvas.sfu.ca</li>
+        <li>Singh, V. (2010). <strong>Eczar [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Eczar">https://fonts.google.com/specimen/Eczar</a></li>
+        <li>Wei, H. (2014). <strong>Work Sans [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Work+Sans">https://fonts.google.com/specimen/Work+Sans</a></li>
+        <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
+        <li>Figure 1. <strong>[Two pairs of shoes on a gold background][Photograph].</strong>(n.d.). Retrieved from <a href="https://www.offspring.co.uk/blog/new-brand-avvikk/">https://www.offspring.co.uk/blog/new-brand-avvikk/</a></li>
+        <li>Figure 2. <strong>[Model's legs wearing a pair of black boots][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
+        <li>Figure 3. <strong>[Model's legs wearing red tights and gray boots][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
+        <li>Figure 4. <strong>[Model wearing black dress and shoes][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
+        <li>Figure 5. <strong>[Model wearing black shoes][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
+        <li>Figure 6. <strong>[Model's legs and gray boots][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
+        <li>Figure 7. <strong>[Model wearing a white sweater and white shoes][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
+        <li>Figure 8. <strong>[illustrated grand tour poster][Illustration].</strong>(n.d.) Retrieved from <a href="https://www.jpl.nasa.gov/visions-of-the-future/">https://www.jpl.nasa.gov/visions-of-the-future/</a></li>
+        <li>Figure 9. <strong>[illustrated nightlife poster][Illustration].</strong>(n.d.) Retrieved from <a href="https://www.jpl.nasa.gov/visions-of-the-future/">https://www.jpl.nasa.gov/visions-of-the-future/</a></li>
+        <li>Figure 10. <strong>[illustrated venus poster][Illustration].</strong>(n.d.) Retrieved from <a href="https://www.jpl.nasa.gov/visions-of-the-future/">https://www.jpl.nasa.gov/visions-of-the-future/</a></li>
+      </ul>
+    </section>
+
+  </body>
+</html>

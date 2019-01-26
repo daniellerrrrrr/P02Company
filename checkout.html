@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Solaris | Checkout</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <!-- HEADER SECTION -->
+    <header>
+      <h1>Solaris</h1>
+
+      <nav class="main-nav">
+        <div class="nav-container">
+          <a class="nav-link" href="style-guide.html">Style Guide</a>
+          <a class="nav-link" href="shoes.html">Shoes</a>
+          <a class="nav-link" href="cart.html">Cart</a>
+          <a class="nav-link current-link" href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+    <!-- //END HEADER SECTION -->
+
+    <section id="page_template">
+      <h2>Checkout</h2>
+      <h3>Payment Information</h3>
+
+      <div class="payment-container">
+
+        <section class="payment-form">
+          <h4>Secure Payment</h4>
+            <form action="#" method="post">
+            <label>Card Type</label>
+            <input type="radio" name="card_type" value="visa" id="visa"/> Visa
+            <input type="radio" name="card_type" value="mastercard" id="mastercard"/> Mastercard
+
+            <label for="card_name">Name on Card</label>
+            <input type="text" name="card_name" id="card_name" placeholder="Your Name"/>
+
+            <label for="card_number">Card Number</label>
+            <input type="text" name="card_number" id="card_number" placeholder="xxxxxxxxxxxx" maxlength="16"/>
+
+            <label for="expiry">Expiry Date (MM/YY)</label>
+            <input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/>
+
+            <label for="security_code">Security Code</label>
+            <input type="text" name="security_code" id="security_code" placeholder="xxx" maxlength="5"/>
+
+            <label for="phone_number">Phone Number</label>
+            <input type="text" name="phone_number" id="phone_number" placeholder="1234567890"/>
+          </form>
+    </section>
+
+    <section class="payment-form">
+    <h4>Billing Address</h4>
+      <form action="#" method="post">
+        <input type="checkbox" name="billing_address" id="billing_address"/> Use my shipping address
+
+        <p>Your Name<br /> 1234 Avenue<br /> City, Province<br /> A1B 2C3</p>
+
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" placeholder="First Name"/>
+
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Last Name"/>
+
+        <label for="street_number">Street Number</label>
+        <input type="text" name="street_number" id="street_number" placeholder="1234 Avenue"/>
+
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" placeholder="Country"/>
+
+        <label for="province">Province</label>
+        <input type="text" name="province" id="province" placeholder="Province"/>
+
+        <label for="postal_code">Postal Code</label>
+        <input type="text" name="postal_code" id="postal_code" placeholder="A1B2C3" maxlength="6"/>
+      </form>
+    </section>
+
+      <section class="cart-total">
+        <h2>Summary: 4 Items</h2>
+        <ol id="total">
+          <li>Subtotal: &#36;1,500</li>
+          <li>Tax: &#36;187.5</li>
+          <li>Shipping: Free</li>
+        </ol>
+        <p>Estimated Total: &#36;1,687.5</p>
+        <button name="checkout" class="submit-button">Checkout</button>
+        <button name="back" class="reset-button" onclick="window.location.href='cart.html'">Back to Cart</button> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
+      </section>
+    </div>
+  </section> <!-- //END PAYMENT SECTION -->
+
+  <!-- CODE -->
+  <section id="code_section">
+    <h2>Code</h2>
+    <pre><code>&lt;section id="page_template"&gt;
+  &lt;h2&gt;Checkout&lt;/h2&gt;
+  &lt;h3&gt;Payment Information&lt;/h3&gt;
+
+  &lt;div class="payment-container"&gt;
+
+    &lt;section class="payment-form"&gt;
+      &lt;h4&gt;Secure Payment&lt;/h4&gt;
+        &lt;form action="#" method="post"&gt;
+        &lt;label&gt;Card Type&lt;/label&gt;
+        &lt;input type="radio" name="card_type" value="visa" id="visa"/&gt; Visa
+        &lt;input type="radio" name="card_type" value="mastercard" id="mastercard"/&gt; Mastercard
+
+        &lt;label for="card_name"&gt;Name on Card&lt;/label&gt;
+        &lt;input type="text" name="card_name" id="card_name" placeholder="Your Name"/&gt;
+
+        &lt;label for="card_number"&gt;Card Number&lt;/label&gt;
+        &lt;input type="text" name="card_number" id="card_number" placeholder="xxxxxxxxxxxx" maxlength="16"/&gt;
+
+        &lt;label for="expiry"&gt;Expiry Date (MM/YY)&lt;/label&gt;
+        &lt;input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/&gt;
+
+        &lt;label for="security_code"&gt;Security Code&lt;/label&gt;
+        &lt;input type="text" name="security_code" id="security_code" placeholder="xxx" maxlength="5"/&gt;
+
+        &lt;label for="phone_number"&gt;Phone Number&lt;/label&gt;
+        &lt;input type="text" name="phone_number" id="phone_number" placeholder="1234567890"/&gt;
+      &lt;/form&gt;
+    &lt;/section&gt;
+
+    &lt;section class="payment-form"&gt;
+    &lt;h4&gt;Billing Address&lt;/h4&gt;
+      &lt;form action="#" method="post"&gt;
+        &lt;input type="checkbox" name="billing_address" id="billing_address"/&gt; Use my shipping address
+
+        &lt;p&gt;Your Name&lt;br /&gt; 1234 Avenue&lt;br /&gt; City, Province&lt;br /&gt; A1B 2C3&lt;/p&gt;
+
+        &lt;label for="first_name"&gt;First Name&lt;/label&gt;
+        &lt;input type="text" name="first_name" id="first_name" placeholder="First Name"/&gt;
+
+        &lt;label for="last_name"&gt;Last Name&lt;/label&gt;
+        &lt;input type="text" name="last_name" id="last_name" placeholder="Last Name"/&gt;
+
+        &lt;label for="street_number"&gt;Street Number&lt;/label&gt;
+        &lt;input type="text" name="street_number" id="street_number" placeholder="1234 Avenue"/&gt;
+
+        &lt;label for="country"&gt;Country&lt;/label&gt;
+        &lt;input type="text" name="country" id="country" placeholder="Country"/&gt;
+
+        &lt;label for="province"&gt;Province&lt;/label&gt;
+        &lt;input type="text" name="province" id="province" placeholder="Province"/&gt;
+
+        &lt;label for="postal_code"&gt;Postal Code&lt;/label&gt;
+        &lt;input type="text" name="postal_code" id="postal_code" placeholder="A1B2C3" maxlength="6"/&gt;
+      &lt;/form&gt;
+    &lt;/section&gt;
+
+    &lt;section class="cart-total"&gt;
+      &lt;h2&gt;Summary: 4 Items&lt;/h2&gt;
+      &lt;ol id="total"&gt;
+        &lt;li&gt;Subtotal: &#36;1,500&lt;/li&gt;
+        &lt;li&gt;Tax: &#36;187.5&lt;/li&gt;
+        &lt;li&gt;Shipping: Free&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;p&gt;Estimated Total: &#36;1,687.5&lt;/p&gt;
+      &lt;button name="checkout" class="submit-button"&gt;Checkout&lt;/button&gt;
+      &lt;button name="back" class="reset-button" onclick="window.location.href='cart.html'"&gt;Back to Cart&lt;/button&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  </section> <!-- //payment section -->
+
+    <!-- CITATIONS SECTION // -->
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from canvas.sfu.ca</li>
+        <li>Singh, V. (2010). <strong>Eczar [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Eczar">https://fonts.google.com/specimen/Eczar</a></li>
+        <li>Wei, H. (2014). <strong>Work Sans [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Work+Sans">https://fonts.google.com/specimen/Work+Sans</a></li>
+        <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
+      </ul>
+    </section>
+
+  </body>
+</html>
