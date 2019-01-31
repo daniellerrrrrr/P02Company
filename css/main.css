@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Eczar:400,700|Work+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre|Libre+Franklin:400,700');
 /*
   font sources:
-  https://fonts.google.com/specimen/Work+Sans
-  https://fonts.google.com/specimen/Eczar
+  https://fonts.google.com/specimen/Libre+Franklin
+  https://fonts.google.com/specimen/Miriam+Libre
 */
 
 /* MAIN CSS USED ACROSS MOST PAGES */
 
 body{
-  background-color: #f6f2f0;
-  font-family: 'Work Sans', sans-serif;
+  background-color: #fff;
+  font-family: 'Libre Franklin', sans-serif;
   margin:0 0 6rem;
   overflow-wrap: break-word;
 }
 
 /* header styling */
 header{
-  background-color: #f5ece4;
+  background-color: #EBEBEB; /* #C0C0C0; */
   padding-top:6rem;
 }
 
@@ -32,7 +32,7 @@ header h1{
 
 /* navigation styling */
 .main-nav{
-  background-color: #e4d3c3;
+  background-color: #446AAF;
   font-size: 0.8rem;
   width:100%;
   margin-top: 1.5rem;
@@ -47,6 +47,7 @@ header h1{
   text-transform: uppercase;
   text-align: center;
   transition: 0.2s;
+  color: #fff;
 }
 
 .nav-link:last-child{
@@ -55,11 +56,11 @@ header h1{
 
 .nav-link:hover, .nav-link:active, .nav-link:focus{
   border-bottom: 2px solid;
-  color: #000;
+  color: #EBEBEB;
 }
 
 .style-guide-nav{
-  background-color: #B1957D;
+  background-color: #1E4CA1;
   margin-top: 0;
 }
 
@@ -70,14 +71,14 @@ header h1{
 /* main page/content width styling */
 #interactive_elements, #page_template{
   padding:1rem 0 2rem;
-  border-bottom: 2px  #b1957d solid;
+  border-bottom: 2px  #1E4CA1 solid;
   margin:auto;
   width:80%;
 }
 
 #text_elements, #combined_elements, #brand_information, #design_elements, #citations, #code_section{
   padding:3rem 0 2rem;
-  border-bottom: 2px  #b1957d solid;
+  border-bottom: 2px  #1E4CA1 solid;
   margin:auto;
   width:80%;
 }
@@ -90,7 +91,7 @@ section{
   margin: 0 0 3rem 0;
   padding-bottom: 1rem;
   width:100%;
-  border-bottom: 2px  #b1957d dotted;
+  border-bottom: 2px  #1E4CA1 dotted;
 }
 
 .element:last-child{
@@ -104,12 +105,12 @@ figure{
 }
 
 h1{
-  font-family: 'Eczar', serif;
+  font-family: 'Miriam Libre', sans-serif;
   font-weight: 400;
 }
 
 h2, h3, h4{
-  font-family: 'Eczar', serif;
+  font-family: 'Miriam Libre', sans-serif;
   font-weight: 700;
 }
 
@@ -119,7 +120,7 @@ a{
 }
 
 p a, li a{
-  color: #b1957d;
+  color: #1E4CA1;
   font-weight: bold;
   transition: 0.1s;
 }
@@ -156,7 +157,7 @@ label{
 }
 
 input{
-  background-color: #fff;
+  background-color: #EBEBEB;
   border: 0;
   padding: 0.5rem;
   transition: 0.2s;
@@ -164,7 +165,7 @@ input{
 }
 
 input:hover, input:active, input:focus{
-  background-color: #E4D3C3;
+  background-color: #C0C0C0;
 }
 
 input[type=text]{
@@ -179,7 +180,7 @@ input[type=radio]{
 .h1-example{
   font-size: 2rem;
   margin:0;
-  font-family: 'Eczar', serif;
+  font-family: 'Miriam Libre', sans-serif;
 }
 
 code{
@@ -204,7 +205,7 @@ pre{
 #example-buttons{ /*specifically for style guide*/
   padding: 1rem;
   width:20rem;
-  background-color: #E4D3C3;
+  background-color: #446AAF;
 }
 
 button{
@@ -213,7 +214,7 @@ button{
   text-transform: uppercase;
   border:none;
   width: 100%;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   transition: 0.2s;
 }
 
@@ -227,16 +228,16 @@ button:active{
 }
 
 .reset-button{
-  background-color: #F5ECE4;
+  background-color: #EBEBEB;
   border: 1px transparent;
 }
 
 .submit-button{
-  background-color: #000;
+  background-color: #FF6700;
   color: #fff;
   border-top: 1px transparent;
-  border-right: 1px #F5ECE4 solid;
-  border-bottom: 1px #F5ECE4 solid;
+  border-right: 1px #446AAF solid;
+  border-bottom: 1px #446AAF solid;
   border-left: 1px transparent;
   transition: 0.3s;
 }
@@ -266,16 +267,16 @@ ol li::before {
 }
 
 .eczar{
-  font-family: 'Eczar', serif;
+  font-family: 'Miriam Libre', sans-serif;
 }
 
 .worksans{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   margin-top: 2rem;
 }
 
 .bg-colour{
-  background-color: #f6f2f0;
+  background-color: #fff;
   border: 1px solid;
 }
 
@@ -286,22 +287,21 @@ ol li::before {
 }
 
 .accent1-colour{
-  background-color: #F5ECE4;
-  border: 1px solid;
+  background-color: #C0C0C0;
 }
 
 .accent2-colour{
-  background-color: #E4d3c3;
+  background-color: #446AAF;
   border: 1px solid transparent;
 }
 
 .accent3-colour{
-  background-color: #B1957D;
+  background-color: #1E4CA1;
   border: 1px solid transparent;
 }
 
 .accent4-colour{
-  background-color: #FFF;
+  background-color: #FF6700;
   border: 1px solid transparent;
 }
 
@@ -326,13 +326,13 @@ ol li::before {
 }
 
 #total{ /* id for ol */
-  border-bottom: 2px  #b1957d dotted;
+  border-bottom: 2px  #1E4CA1 dotted;
   padding-bottom: 1rem;
 }
 
 .cart-total{
   padding: 0 1rem 1rem 1rem;
-  background-color: #E4D3C3;
+  background-color: #446AAF;
 }
 
 /* CHECKOUT PAGE */
