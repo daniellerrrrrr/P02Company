@@ -10,7 +10,7 @@
 body{
   background-color: #fff;
   font-family: 'Libre Franklin', sans-serif;
-  margin:0 0 6rem;
+  margin:0;
   overflow-wrap: break-word;
 }
 
@@ -65,7 +65,7 @@ header{
 }
 
 .nav-link-container{
-  text-align: right;
+  text-align: left;
 }
 
 .style-guide-nav{
@@ -80,7 +80,7 @@ header{
 /* main page/content width styling */
 #interactive_elements, #page_template{
   padding:1rem 0 2rem;
-  border-bottom: 2px  #1E4CA1 solid;
+  /* border-bottom: 2px  #1E4CA1 solid; */
   margin:auto;
   width:80%;
 }
@@ -419,6 +419,29 @@ h1.hero{
   height: auto;
   margin: auto;
 }
+
+
+
+.checkout-preview img{
+  width: 25%;
+  height: auto;
+}
+
+.page-container{
+  width: 80%;
+  margin: auto;
+}
+
+.flex-container{
+  padding:2rem;
+}
+
+
+
+
+
+
+
 
 
 /* media query */

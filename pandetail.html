@@ -14,14 +14,17 @@
 
     <!-- HEADER SECTION -->
     <header>
-      <h1>Solaris</h1>
-
       <nav class="main-nav">
+
         <div class="nav-container">
-          <a class="nav-link" href="style-guide.html">Style Guide</a>
-          <a class="nav-link current-link" href="shoes.html">Shoes</a>
-          <a class="nav-link" href="cart.html">Cart</a>
-          <a class="nav-link" href="checkout.html">Checkout</a>
+          <div class="logo-header two-column">
+            <a class="nav-link" href="index.html">Cool Pans</a>
+          </div>
+          <div class="nav-link-container two-column">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="products.html">Products</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -30,8 +33,12 @@
     <!-- PRODUCT LISTING -->
     <div id="page_template">
 
+<div class="flex-box">
+
       <!-- PRODUCT DETAIL CONTAINER -->
-      <section class="element">
+
+      <div class="flex-container">
+
           <figure>
             <img src="images/products/pan-01.jpg" alt="cast iron pan on blue background">
           </figure>
@@ -43,7 +50,10 @@
           <figure>
             <img src="images/spy-02.jpg" alt="The Cast Iron in a still of the movie Spy, wielded by Melissa McCarthy">
           </figure>
+        </div>
 
+<div class="flex-container">
+  <section class="element">
 
         <h2>The Cast Iron</h2>
         <p><strong>&#36;10,000</strong></p>
@@ -60,7 +70,7 @@
             <option value="pan_deluxe">Pan and autographed deluxe display case</option>
           </select>
 
-          <button name="checkout" class="submit-button">Add to Cart</button>
+          <button name="checkout" class="submit-button" onclick="window.location.href='checkout2.html'">Add to Cart</button>
       </section>
 
           <section class="element user_reviews">
@@ -92,9 +102,47 @@
           <button name="checkout" class="submit-button">Submit</button>
           <button name="back" class="reset-button">Cancel</button>
         </section>
+      </div>
 
-      <!-- //PRODUCT DETAIL CONTAINER -->
+      </div>
+    <!-- //PRODUCT DETAIL CONTAINER -->
+
     </div><!-- //PRODUCT LISTING -->
+
+    <footer>
+      <div class="nav-container">
+        <div class="four-column">
+          <a href="#">Footer Link 1</a>
+          <a href="#">Footer Link 2</a>
+          <a href="#">Footer Link 3</a>
+          <a href="#">Footer Link 4</a>
+        </div>
+
+        <div class="four-column">
+          <h3>Contact Us</h3>
+          <p>#69 Meow Ave, Meow City</p>
+          <p>P.O. M1E2O3W</p>
+          <p>666-666-666</p>
+        </div>
+
+        <div class="four-column">
+          <h2>Follow us!</h2>
+          <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+          <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+          <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+        </div>
+
+        <div class="four-column">
+          <form>
+            <label for="email">Subscribe</label>
+            <input type="text" name="email" id="email" placeholder="Email"/>
+          </form>
+          <button name="submit" class="submit-button">Submit</button>
+        </div>
+      </div>
+    </footer>
+
+
 
   </body>
 </html>
