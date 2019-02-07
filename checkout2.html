@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cool Pans | Style Guide</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <!-- HEADER SECTION -->
+    <header>
+      <nav class="main-nav">
+
+        <div class="nav-container">
+          <div class="logo-header two-column">
+            <a class="nav-link" href="index.html">Cool Pans</a>
+          </div>
+          <div class="nav-link-container two-column">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html#about">About</a>
+            <a class="nav-link" href="products.html">Products</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="page-container">
+
+<div class="flex-box">
+
+      <div class="flex-container">
+
+      <div class="two-column">
+        <h3 class="section-headings">Payment Form</h3>
+
+        <form method="post" action="#">
+          <label for="form-email">Contact Information</label>
+          <input type="text" id="form-email" placeholder="email@example.com">
+
+
+          <label for="form-firstName">Shipping Information</label>
+
+          <div class="box">
+            <div class="grow-1">
+              <input type="text" id="form-firstName" placeholder="First name">
+            </div>
+            <div class="grow-1">
+              <input type="text" id="form-lastName" placeholder="Last name">
+            </div>
+          </div>
+
+          <input type="text" id="form-address" placeholder="Adress">
+          <input type="text" id="form-city" placeholder="City">
+
+
+          <label for="form-lastName">Payment Information</label>
+          <input type="radio" name="option" value="visa">Visa
+          <input type="radio" name="option" value="mastercard">Mastercard
+          <input type="radio" name="option" value="interac">Interac
+
+          <div class="sub-element">
+            <input type="text" id="card-number" placeholder="Card Number">
+
+            <div class="box">
+              <div class="grow-2">
+                <input type="text" id="exp-date" placeholder="MM/YYYY">
+              </div>
+              <div class="grow-1">
+                <input type="text" id="cvv" placeholder="CVV">
+              </div>
+            </div>
+          </div>
+
+          <button name="submit" class="submit-button">Submit</button>
+          <button name="reset" class="reset-button">Reset</button>
+
+        </form>
+      </div>
+      </div>
+
+
+      <div class="flex-container">
+        <section class="check-out">
+        <h3 class="section-headings">Shopping Cart</h3>
+
+          <section class="product-checkout">
+            <div class="box cart-sections">
+              <div class="grow-1 checkout-preview">
+                <img src="images/products/pan-03.jpg" alt="product" >
+              </div>
+              <div class="grow-2">
+                <h4 class="item-name">Stainless Steel Frying Pan</h4>
+                <p>$85.99</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="box cart-sections">
+            <div class="grow-1">
+              <p>Subtotal:</p>
+              <p>Shipping:</p>
+              <p>Tax:</p>
+            </div>
+
+            <div class="grow-1 subtotals">
+              <p>85.99</p>
+              <p>5.99</p>
+              <p>11.27</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="grow-1">
+              <h3>Total</h3>
+            </div>
+            <div class="grow-1 total-price">
+              <p>120.88</p>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    </div>
+
+
+    <footer>
+      <div class="nav-container">
+        <div class="four-column">
+          <a href="#">Footer Link 1</a>
+          <a href="#">Footer Link 2</a>
+          <a href="#">Footer Link 3</a>
+          <a href="#">Footer Link 4</a>
+        </div>
+
+        <div class="four-column">
+          <h3>Contact Us</h3>
+          <p>#69 Meow Ave, Meow City</p>
+          <p>P.O. M1E2O3W</p>
+          <p>666-666-666</p>
+        </div>
+
+        <div class="four-column">
+          <h2>Follow us!</h2>
+          <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+          <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+          <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+        </div>
+
+        <div class="four-column">
+          <form>
+            <label for="email">Subscribe</label>
+            <input type="text" name="email" id="email" placeholder="Email"/>
+          </form>
+          <button name="submit" class="submit-button">Submit</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -24,9 +24,9 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 
 .product{
-  flex: 1 1 20rem;
-  -webkit-flex: 1 1 20rem;
-  -ms-webkit-flex:  1 1 20rem;
+  flex: 0 1 20rem;
+  -webkit-flex: 0 1 20rem;
+  -ms-webkit-flex:  0 1 20rem;
 
   margin: 1rem 1rem 2rem 1rem;
 }
@@ -67,7 +67,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
   -ms-justify-content: flex-start;
-  
+
   margin-left:-1rem;
   width: 100%;
 }
@@ -79,4 +79,43 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   padding: 1rem;
   margin: 1rem;
+}
+/*
+.two-column {
+  width: 49%;
+  display: inline-block;
+} */
+
+.four-column {
+  width: 24%;
+  display: inline-block;
+}
+
+
+.flex-box{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+}
+
+
+.flex-container{
+  flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-webkit-flex:  1 1 0;
+}
+
+/* media query */
+@media only screen and (max-width: 669px) {
+  .two-column{
+    width: 100%;
+  }
 }

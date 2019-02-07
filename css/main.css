@@ -10,19 +10,13 @@
 body{
   background-color: #fff;
   font-family: 'Libre Franklin', sans-serif;
-  margin:0 0 6rem;
+  margin:0;
   overflow-wrap: break-word;
 }
 
-/* header styling */
+/* header styling*/
 header{
-  background-color: #EBEBEB; /* #C0C0C0; */
-  padding-top:6rem;
-}
-
-header h1{
-  margin:auto;
-  width:80%;
+  padding-top:0;
 }
 
 .nav-container{ /* for link placement in navigation bars */
@@ -35,14 +29,15 @@ header h1{
   background-color: #446AAF;
   font-size: 0.8rem;
   width:100%;
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 
 .nav-link{
   border-bottom: 2px solid transparent;
   display: inline-block;
   font-size: 0.8rem;
-  margin-right:1rem;
+  font-weight: bold;
+  margin-right:3rem;
   padding: 1rem 0;
   text-transform: uppercase;
   text-align: center;
@@ -59,6 +54,20 @@ header h1{
   color: #EBEBEB;
 }
 
+.logo-header{
+  text-align: left;
+}
+
+.logo-header a{
+  font-family: 'Miriam Libre', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.nav-link-container{
+  text-align: left;
+}
+
 .style-guide-nav{
   background-color: #1E4CA1;
   margin-top: 0;
@@ -71,7 +80,7 @@ header h1{
 /* main page/content width styling */
 #interactive_elements, #page_template{
   padding:1rem 0 2rem;
-  border-bottom: 2px  #1E4CA1 solid;
+  /* border-bottom: 2px  #1E4CA1 solid; */
   margin:auto;
   width:80%;
 }
@@ -109,9 +118,15 @@ h1{
   font-weight: 400;
 }
 
+h1.hero{
+  font-size: 4rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
 h2, h3, h4{
   font-family: 'Miriam Libre', sans-serif;
   font-weight: 700;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 a{
@@ -132,7 +147,6 @@ li a:hover, a:active, a:focus{
 }
 
 img{
-  display: inline-block;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -169,8 +183,8 @@ input:hover, input:active, input:focus{
 }
 
 input[type=text]{
-  width: 15rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 input[type=radio]{
@@ -242,6 +256,14 @@ button:active{
   transition: 0.3s;
 }
 
+.text-button {
+  color: #1E4CA1;
+  font-family: 'Miriam Libre', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
 /* li styling instructions from https://css-tricks.com/custom-list-number-styling/ */
 ol{
   line-height: 1.75rem;
@@ -258,6 +280,28 @@ ol li::before {
   content: counter(list-counter) ". ";
   font-weight: 700;
   padding-right: 0.25rem;
+}
+
+footer{
+  width: 100%;
+  background-color: #e2e2e2;
+  padding: 2rem;
+  margin: 0;
+}
+
+footer a {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  line-height: 0.5rem;
+}
+
+footer img {
+  width: 15%;
+  margin-right: 0.5rem;
 }
 
 /* style guide styling of example text and colours section */
@@ -338,4 +382,71 @@ ol li::before {
 /* CHECKOUT PAGE */
 .payment-form h4{
   margin-top:0;
+}
+
+/* homepage */
+
+.hero-container{
+  position: relative;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-text-right {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 40%;
+}
+
+.hero-text-left {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  width: 40%;
+  text-align: right;
+}
+
+h1.hero{
+  font-family: 'Miriam Libre', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+.hero2-text {
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+
+
+.checkout-preview img{
+  width: 25%;
+  height: auto;
+}
+
+.page-container{
+  width: 80%;
+  margin: auto;
+}
+
+.flex-container{
+  padding:2rem;
+}
+
+
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (max-width: 669px) {
+  .nav-link-container{
+    text-align: left;
+  }
 }
