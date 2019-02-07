@@ -67,7 +67,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
   -ms-justify-content: flex-start;
-  
+
   margin-left:-1rem;
   width: 100%;
 }
@@ -79,4 +79,21 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   padding: 1rem;
   margin: 1rem;
+}
+
+.two-column {
+  width: 49%;
+  display: inline-block;
+}
+
+.four-column {
+  width: 24%;
+  display: inline-block;
+}
+
+/* media query */
+@media only screen and (max-width: 669px) {
+  .two-column{
+    width: 100%;
+  }
 }
