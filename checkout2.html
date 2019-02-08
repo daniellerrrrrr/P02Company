@@ -14,28 +14,25 @@
     <!-- HEADER SECTION -->
     <header>
       <nav class="main-nav">
-
+        <div class="logo-header">
+          <a href="index.html">Cool Pans</a>
+        </div>
         <div class="nav-container">
-          <div class="logo-header two-column">
-            <a class="nav-link" href="index.html">Cool Pans</a>
-          </div>
-          <div class="nav-link-container two-column">
+          <div class="nav-link-container">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="index.html#about">About</a>
             <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link current-link" href="checkout2.html">Cart</a>
           </div>
         </div>
       </nav>
     </header>
 
+    <div class="container">
+    <h1> Checkout</h1>
 
-    <div class="page-container">
-
-<div class="flex-box">
-
-      <div class="flex-container">
-
-      <div class="two-column">
+    <div class="box">
+      <section class="element grow-1">
         <h3 class="section-headings">Payment Form</h3>
 
         <form method="post" action="#">
@@ -54,7 +51,7 @@
             </div>
           </div>
 
-          <input type="text" id="form-address" placeholder="Adress">
+          <input type="text" id="form-address" placeholder="Address">
           <input type="text" id="form-city" placeholder="City">
 
 
@@ -67,7 +64,7 @@
             <input type="text" id="card-number" placeholder="Card Number">
 
             <div class="box">
-              <div class="grow-2">
+              <div class="grow-1">
                 <input type="text" id="exp-date" placeholder="MM/YYYY">
               </div>
               <div class="grow-1">
@@ -76,15 +73,20 @@
             </div>
           </div>
 
-          <button name="submit" class="submit-button">Submit</button>
-          <button name="reset" class="reset-button">Reset</button>
+          <div class="box">
+            <div class="grow-1">
+              <button name="submit" class="submit-button">Submit</button>
+            </div>
+            <div class="grow-1">
+              <button name="reset" class="reset-button">Reset</button>
+            </div>
+          </div>
 
         </form>
-      </div>
-      </div>
 
+      </section>
 
-      <div class="flex-container">
+      <section class="element grow-1">
         <section class="check-out">
         <h3 class="section-headings">Shopping Cart</h3>
 
@@ -93,9 +95,9 @@
               <div class="grow-1 checkout-preview">
                 <img src="images/products/pan-03.jpg" alt="product" >
               </div>
-              <div class="grow-2">
+              <div class="grow-1">
                 <h4 class="item-name">Stainless Steel Frying Pan</h4>
-                <p>$85.99</p>
+                <p>$8,275</p>
               </div>
             </div>
           </section>
@@ -108,9 +110,9 @@
             </div>
 
             <div class="grow-1 subtotals">
-              <p>85.99</p>
+              <p>8,275</p>
               <p>5.99</p>
-              <p>11.27</p>
+              <p>993</p>
             </div>
           </div>
 
@@ -119,41 +121,41 @@
               <h3>Total</h3>
             </div>
             <div class="grow-1 total-price">
-              <p>120.88</p>
+              <p>9,273.99</p>
             </div>
           </div>
 
         </section>
+      </section>
       </div>
     </div>
 
-    </div>
 
 
     <footer>
-      <div class="nav-container">
-        <div class="four-column">
+      <div class="container box">
+        <div class="footer-column">
           <a href="#">Footer Link 1</a>
           <a href="#">Footer Link 2</a>
           <a href="#">Footer Link 3</a>
           <a href="#">Footer Link 4</a>
         </div>
 
-        <div class="four-column">
+        <div class="footer-column">
           <h3>Contact Us</h3>
           <p>#69 Meow Ave, Meow City</p>
           <p>P.O. M1E2O3W</p>
           <p>666-666-666</p>
         </div>
 
-        <div class="four-column">
+        <div class="footer-column">
           <h2>Follow us!</h2>
           <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
           <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
           <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
         </div>
 
-        <div class="four-column">
+        <div class="footer-column">
           <form>
             <label for="email">Subscribe</label>
             <input type="text" name="email" id="email" placeholder="Email"/>
