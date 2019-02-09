@@ -14,38 +14,39 @@
     <!-- HEADER SECTION -->
     <header>
       <nav class="main-nav">
-
-        <div class="nav-container">
-          <div class="logo-header two-column">
-            <a class="nav-link" href="index.html">Cool Pans</a>
+        <div class="container nav-box">
+          <div class="logo-header grow-1">
+            <a href="index.html">Cool Pans</a>
           </div>
-          <div class="nav-link-container two-column">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="index.html#about">About</a>
-            <a class="nav-link current-link" href="products.html">Products</a>
+          <div class="nav-link-container grow-1">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link current-link" href="products.html">Products</a>
+              <a class="nav-link" href="checkout.html">Cart</a>
           </div>
         </div>
       </nav>
     </header>
+
     <!-- //END HEADER SECTION -->
 
     <!-- PRODUCT LISTING -->
     <section id="page_template">
-      <h2>Pans</h2>
+      <h1>Pans</h1>
 
       <!-- PRODUCT LISTING CONTAINER -->
       <div class="product-container">
 
         <div class="product">
           <figure class="image-link">
-            <a href="pandetail.html"><img src="images/products/pan-01.jpg" alt="cast iron pan on blue background"></a>
+            <a href="product.html"><img src="images/products/pan-01.jpg" alt="cast iron pan on blue background"></a>
           </figure>
 
           <section class="product-info">
             <h3>The Cast Iron</h3>
             <p>A Hollywood favourite.</p>
             <strong>&#36;10,000</strong>
-            <p><a href="pandetail.html">View Full Details</a></p>
+            <p><a href="product.html">View Full Details</a></p>
           </section>
         </div>
 
@@ -78,7 +79,7 @@
       </div><!-- //PRODUCT LISTING CONTAINER -->
     </section><!-- //PRODUCT LISTING -->
 
-    <footer>
+    <!-- <footer>
       <div class="nav-container">
         <div class="four-column">
           <a href="#">Footer Link 1</a>
@@ -109,7 +110,43 @@
           <button name="submit" class="submit-button">Submit</button>
         </div>
       </div>
+    </footer> -->
+
+
+    <footer>
+      <div class="box container">
+        <div class="grow-1">
+          <h3>Resources</h3>
+
+          <a href="style-guide.html">Style Guide</a>
+          <a href="#">Citations</a>
+          <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
+        </div>
+
+        <div class="grow-1">
+          <h3>Contact Us</h3>
+          <p>#69 Meow Ave, Meow City</p>
+          <p>P.O. M1E2O3W</p>
+          <p>666-666-666</p>
+        </div>
+
+        <div class="grow-1">
+          <h3>Follow us!</h3>
+          <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+          <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+          <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+        </div>
+
+        <div class="grow-1">
+          <form>
+            <h3><label for="email">Subscribe</label></h3>
+            <input type="text" name="email" id="email" placeholder="Email"/>
+          </form>
+          <button name="submit" class="submit-button">Submit</button>
+        </div>
+      </div>
     </footer>
+
 
   </body>
 </html>

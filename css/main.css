@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Miriam+Libre|Libre+Franklin:400,700');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre|Libre+Franklin:400,500,700');
 /*
   font sources:
   https://fonts.google.com/specimen/Libre+Franklin
@@ -35,10 +35,10 @@ header{
 .nav-link{
   border-bottom: 2px solid transparent;
   display: inline-block;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-right:3rem;
-  padding: 1rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right:1.5rem;
+  padding: 1.5rem 0;
   text-transform: uppercase;
   text-align: center;
   transition: 0.2s;
@@ -54,11 +54,17 @@ header{
   color: #EBEBEB;
 }
 
+.nav-link-container{
+  text-align: right;
+  align-items: flex-end;
+}
+
 .logo-header{
   text-align: left;
-  width: 80%;
+  padding: 1rem 0;
+  /* width: 80%;
   margin: auto;
-  padding-top: 1.5rem;
+  padding-top: 1.5rem; */
 }
 
 .logo-header a{
@@ -172,12 +178,12 @@ label{
 }
 
 input{
+  display: inline-block;
   background-color: #EBEBEB;
   border: 0;
   padding: 0.5rem;
   transition: 0.2s;
-  margin-top: 1rem;
-
+  margin: 1rem 1rem 0 0;
 }
 
 input:hover, input:active, input:focus{
@@ -191,6 +197,28 @@ input[type=text]{
 
 input[type=radio]{
   margin: 0.8rem 0.2rem 0.5rem 0;
+}
+
+textarea{
+  display: block;
+  margin-top: 1rem;
+  background-color: #EBEBEB;
+  border:none;
+  padding: 0.5rem;
+  width: 100%;
+  height: 10rem;
+}
+
+select{
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #EBEBEB;
+  border:none;
+}
+
+textarea:hover, textarea:active, textarea:focus,
+select:hover, select:active, select:focus{
+  background-color: #C0C0C0;
 }
 
 .h1-example{
@@ -218,12 +246,6 @@ pre{
 }
 
 /* button styling */
-#example-buttons{ /*specifically for style guide*/
-  padding: 1rem;
-  width:20rem;
-  background-color: #446AAF;
-}
-
 button{
   padding:1rem;
   margin-top: 1rem;
@@ -243,18 +265,15 @@ button:active{
   box-shadow: 6px 6px;
 }
 
-.reset-button{
+.reset-button{ /*change this to secondary-button*/
   background-color: #EBEBEB;
   border: 1px transparent;
 }
 
-.submit-button{
+.submit-button{ /*change this to main-button*/
   background-color: #FF6700;
   color: #fff;
-  border-top: 1px transparent;
-  border-right: 1px #446AAF solid;
-  border-bottom: 1px #446AAF solid;
-  border-left: 1px transparent;
+  border: 1px transparent;
   transition: 0.3s;
 }
 
@@ -286,10 +305,13 @@ ol li::before {
 
 /*FOOTER STYLING */
 footer{
-  width: 100%;
   background-color: #e2e2e2;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 2rem 0rem;
   margin: 0;
+}
+
+footer img:hover{
+  cursor: pointer;
 }
 
 footer a {
@@ -300,6 +322,7 @@ footer a {
 
 footer a:hover, footer a:focus {
   text-decoration: underline;
+  border-bottom: 0 transparent;
 }
 
 footer p {
@@ -313,7 +336,7 @@ footer img {
 }
 
 footer label, footer h2, footer h3 {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
 }
 
 .footer-column{
@@ -407,6 +430,13 @@ footer label, footer h2, footer h3 {
   color: white;
   margin: 0;
   padding: 0;
+  background-color: #000;
+}
+
+.hero-container img{
+  opacity: 0.7;
+  vertical-align:bottom;
+  width: 100%;
 }
 
 .hero-text-right {
@@ -414,6 +444,7 @@ footer label, footer h2, footer h3 {
   bottom: 50%;
   left: 50%;
   width: 40%;
+  z-index: 1;
 }
 
 .hero-text-left {
@@ -431,20 +462,28 @@ h1.hero{
 }
 
 .hero2{
-  width: 50%;
+  /* width: 50%;
   float: left;
-  display: inline-block;
+  display: inline-block; */
+}
+
+.hero2 img{
+  vertical-align:bottom;
+  width: 100%;
 }
 
 .hero2-text {
-  width: 49%;
+  padding:1rem;
+  margin: auto;
+  width: 80%;
+  /* width: 49%;
   text-align: center;
   display: inline-block;
 
   margin: auto;
   justify-content:center;
 
-  min-height: 600px;
+  min-height: 600px; */
 }
 
 /* NEW CHECKOUT PAGE */
@@ -462,7 +501,7 @@ h1.hero{
 }
 
 .checkout-preview img {
-  width: 94%;
+  width: 100%;
 }
 
 .subtotals {
@@ -484,11 +523,15 @@ h1.hero{
 .cart-sections {
   padding-bottom: 1em;
   margin-bottom: 1em;
-  border-bottom: 0.09em solid #b5b5b5;
+  border-bottom: 1px  #1E4CA1 solid;
 }
 
 .cart-sections p{
   line-height: 0.7em;
+}
+
+.product-detail{
+  margin-left: 2rem;
 }
 
 /* media query */

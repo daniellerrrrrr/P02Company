@@ -13,14 +13,17 @@
 
     <!-- HEADER SECTION -->
     <header>
-      <h1>Cool Pans</h1>
-
       <nav class="main-nav">
-        <div class="nav-container">
-          <a class="nav-link current-link" href="#">Style Guide</a>
-          <a class="nav-link" href="#">Pans</a>
-          <a class="nav-link" href="#">Cart</a>
-          <a class="nav-link" href="#">Checkout</a>
+        <div class="container nav-box">
+          <div class="logo-header grow-1">
+            <a href="index.html">Cool Pans</a>
+          </div>
+          <div class="nav-link-container grow-1">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="checkout.html">Cart</a>
+          </div>
         </div>
       </nav>
 
@@ -76,9 +79,13 @@
       <section class="element">
         <h3>Submit and Reset Buttons</h3>
 
-        <div id="example-buttons">
-          <button name="submit" class="submit-button">Submit</button>
-          <button name="reset" class="reset-button">Reset</button>
+        <div class="box">
+          <div class="grow-1">
+            <button name="submit" class="submit-button">Submit</button>
+          </div>
+          <div class="grow-1">
+            <button name="reset" class="reset-button">Reset</button>
+          </div>
         </div>
 
         <h4>CSS Selectors</h4>
@@ -199,20 +206,26 @@
       <!-- Navigation styling -->
       <section class="element">
         <h3>Main Navigation</h3>
+
         <nav class="main-nav">
-          <div class="nav-container">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Pans</a>
-            <a class="nav-link" href="#">About Cool Pans</a>
+          <div class="container nav-box">
+            <div class="nav-link-container grow-1">
+                <a class="nav-link current-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html#about">About</a>
+                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="checkout.html">Cart</a>
+            </div>
           </div>
         </nav>
 
         <h4>Code</h4>
         <pre><code>&lt;nav class="main-nav"&gt;
-  &lt;div class="nav-container"&gt;
-    &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
-    &lt;a class="nav-link" href="#"&gt;Pans&lt;/a&gt;
-    &lt;a class="nav-link" href="#"&gt;About Cool Pans&lt;/a&gt;
+  &lt;div class="container nav-box"&gt;
+    &lt;div class="nav-link-container grow-1"&gt;
+      &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
+      &lt;a class="nav-link" href="#"&gt;Pans&lt;/a&gt;
+      &lt;a class="nav-link" href="#"&gt;About Cool Pans&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
       </section>
@@ -310,25 +323,37 @@
   </section>
     <!-- // BRANDING ELEMENTS SECTION -->
 
+    <footer>
+      <div class="nav-container">
+        <div class="four-column">
+          <a href="#">Footer Link 1</a>
+          <a href="#">Footer Link 2</a>
+          <a href="#">Footer Link 3</a>
+          <a href="#">Footer Link 4</a>
+        </div>
 
-    <!-- CITATIONS SECTION -->
-    <section id="citations">
-      <h2>Citations</h2>
+        <div class="four-column">
+          <h3>Contact Us</h3>
+          <p>#69 Meow Ave, Meow City</p>
+          <p>P.O. M1E2O3W</p>
+          <p>666-666-666</p>
+        </div>
 
-      <ul>
-        <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from canvas.sfu.ca</li>
-        <li>Sahar, M. (2010). <strong>Miriam Libre [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Miriam+Libre">https://fonts.google.com/specimen/Miriam+Libre</a></li>
-        <li>Impallari Type. (2014). <strong>Libre Franklin [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Libre+Franklin">https://fonts.google.com/specimen/Libre+Franklin</a></li>
-        <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
+        <div class="four-column">
+          <h2>Follow us!</h2>
+          <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+          <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+          <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+        </div>
 
-        <li>Spy (2011)<strong>[image]</strong> Retrieved from film.</li>
-        <li>PUBG - Official PlayStation 4 Launch - Pan-demonium Trailer (2018)<strong>[image]</strong> Retrieved from <a href="https://www.youtube.com/watch?v=bgwrB9qZZg0"> https://www.youtube.com/watch?v=bgwrB9qZZg0</a></li>
-
-        <li>DHgate<strong>Big Size High Quality All Metal Made PUBG Pan Game Cosplay Props with PUBG LOGO [image].</strong> Retrieved from <a href="https://www.dhgate.com/product/big-size-high-quality-all-metal-made-pubg/416224961.html">https://www.dhgate.com/product/big-size-high-quality-all-metal-made-pubg/416224961.html</a></li>
-        <li>Wilko <strong>[image].</strong> Retrieved from <a href="https://www.wilko.com/en-uk/wilko-functional-non-stick-frying-pan-24cm-black/p/0221116">https://www.wilko.com/en-uk/wilko-functional-non-stick-frying-pan-24cm-black/p/0221116</a></li>
-        <li>Horeca-r Commerical Riveted Cookware<strong>[image]].</strong> Retrieved from <a href="https://sitramusa.com/product/horeca-r-fry-pan/">https://sitramusa.com/product/horeca-r-fry-pan/</a></li>
-      </ul>
-    </section>
-
+        <div class="four-column">
+          <form>
+            <label for="email">Subscribe</label>
+            <input type="text" name="email" id="email" placeholder="Email"/>
+          </form>
+          <button name="submit" class="submit-button">Submit</button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
