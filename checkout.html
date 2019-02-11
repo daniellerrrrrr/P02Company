@@ -22,7 +22,7 @@
               <a class="nav-link" href="index.html">Home</a>
               <a class="nav-link" href="index.html#about">About</a>
               <a class="nav-link" href="products.html">Products</a>
-              <a class="nav-link current-link" href="checkout.html">Cart</a>
+              <a class="nav-link current-link" href="cart.html">Cart</a>
           </div>
         </div>
       </nav>
@@ -62,6 +62,7 @@
           <input type="radio" name="option" value="interac">Interac
 
           <div class="sub-element">
+            <input type="text" id="name-on-card" placeholder="Name on Card">
             <input type="text" id="card-number" placeholder="Card Number">
 
             <div class="box">
@@ -98,7 +99,7 @@
               </div>
               <div class="grow-1">
                 <h4 class="item-name">Stainless Steel Frying Pan</h4>
-                <p>$8,275</p>
+                <p>&#36;8,275.00</p>
               </div>
             </div>
           </section>
@@ -111,9 +112,9 @@
             </div>
 
             <div class="grow-1 subtotals">
-              <p>8,275</p>
-              <p>5.99</p>
-              <p>993</p>
+              <p>&#36;8,275.00</p>
+              <p>&#36;5.99</p>
+              <p>&#36;993.00</p>
             </div>
           </div>
 
@@ -122,7 +123,7 @@
               <h3>Total</h3>
             </div>
             <div class="grow-1 total-price">
-              <p>9,273.99</p>
+              <p>&#36;9,273.99</p>
             </div>
           </div>
 
@@ -133,37 +134,40 @@
 
 
 
-    <footer>
-      <div class="container box">
-        <div class="footer-column">
-          <a href="#">Footer Link 1</a>
-          <a href="#">Footer Link 2</a>
-          <a href="#">Footer Link 3</a>
-          <a href="#">Footer Link 4</a>
+    <footer> <!-- START FOOTER -->
+      <div class="box container">
+        <div class="grow-1">
+          <h3>Resources</h3>
+
+          <a href="style-guide.html">Style Guide</a>
+          <a href="#">Citations</a>
+          <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
         </div>
 
-        <div class="footer-column">
+        <div class="grow-1">
           <h3>Contact Us</h3>
-          <p>#69 Meow Ave, Meow City</p>
-          <p>P.O. M1E2O3W</p>
+          <p>#69 Meow Ave</p>
+          <p>Meow City, C. C.</p>
+          <p>M1E O3W</p>
           <p>666-666-666</p>
         </div>
 
-        <div class="footer-column">
-          <h2>Follow us!</h2>
+        <div class="grow-1">
+          <h3>Follow us!</h3>
           <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
           <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
           <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
         </div>
 
-        <div class="footer-column">
+        <div class="grow-1">
           <form>
-            <label for="email">Subscribe</label>
+            <h3><label for="email">Subscribe</label></h3>
             <input type="text" name="email" id="email" placeholder="Email"/>
           </form>
           <button name="submit" class="submit-button">Submit</button>
         </div>
       </div>
-    </footer>
+    </footer><!-- END FOOTER -->
+
   </body>
 </html>
