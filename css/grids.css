@@ -114,9 +114,13 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 
-  align-items: center;
+  /* align-items: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
+  -ms-align-items: center;   */
+
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
 }
 
 .grow-1, .grow-3{
@@ -171,5 +175,14 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   footer .grow-1{
     width: 50%;
     margin-bottom: 1rem;
+  }
+
+  #about-img{
+    padding: 10rem;
+  }
+
+  #updates-img{
+    padding: 10rem;
+    order: -1;
   }
 }

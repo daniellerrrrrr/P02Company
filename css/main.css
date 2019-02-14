@@ -415,10 +415,10 @@ footer label, footer h2, footer h3 {
   line-height: 2rem;
 }
 
+/* set two backgrounds, one with a linear-gradient (can be one colour)
+   and the other is the image. look it up at mdn if you want more info
+   -coding help from Ashley Tsang */
 .hero-container#cool-pans {
-    /* set two backgrounds, one with a linear-gradient (can be one colour)
-       and the other is the image. look it up at mdn if you want more info
-       -coding help from Ashley Tsang */
   background: linear-gradient(rgba(255,255,255, 0.1), rgba(0, 0, 0, 0.75)),
     center / cover no-repeat url("../images/cast-iron-pans.jpg")
 }
@@ -426,6 +426,14 @@ footer label, footer h2, footer h3 {
 .hero-container#our-pans {
   background: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.75)),
     center / cover no-repeat url("../images/pubg-01.jpg")
+}
+
+.hero2#about-img {
+  background: center / cover no-repeat url("../images/pan-square.jpg")
+}
+
+.hero2#updates-img{
+  background: center / cover no-repeat url("../images/spy-square.jpg")
 }
 
 .hero-container a{
@@ -457,9 +465,18 @@ h1.hero{
 }
 
 .hero2-text {
-  padding:1rem;
+  padding:4rem 1rem;
   margin: auto;
   width: 80%;
+}
+
+.hero2 h2{
+  font-family: 'Miriam Libre', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 100%;
+  color: white;
+  text-align: center;
 }
 
 .hero2 img{
