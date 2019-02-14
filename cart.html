@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Solaris | Cart</title>
+    <title>Cool Pans | Cart</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/grids.css" />
@@ -13,177 +13,130 @@
 
     <!-- HEADER SECTION -->
     <header>
-      <h1>Solaris</h1>
-
       <nav class="main-nav">
-        <div class="nav-container">
-          <a class="nav-link" href="style-guide.html">Style Guide</a>
-          <a class="nav-link" href="shoes.html">Shoes</a>
-          <a class="nav-link current-link" href="cart.html">Cart</a>
-          <a class="nav-link" href="checkout.html">Checkout</a>
+        <div class="container nav-box">
+          <div class="logo-header grow-1">
+            <a href="index.html">Cool Pans</a>
+          </div>
+          <div class="nav-link-container grow-1">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link current-link" href="cart.html">Cart</a>
+          </div>
         </div>
       </nav>
     </header>
-    <!-- //END HEADER SECTION -->
 
-    <!-- CART -->
-    <section id="page_template">
-      <h2>Cart</h2>
-      <h3>Your Items</h3>
+<main>
+  <div class="container">
+    <h1>Your Cart</h1>
 
-      <!-- CART ITEMS CONTAINER -->
-      <div class="cart-item-container">
+    <div class="box">
+      <div class="grow-1"> <!-- CART ITEMS START -->
+        <section class="product-checkout">
+          <div class="box">
+            <div class="grow-1 checkout-preview">
+              <img src="images/products/pan-03.jpg" alt="product" >
+            </div>
+            <div class="grow-1">
+              <h3 class="item-name">Stainless Steel Frying Pan</h3>
+              <p>Price: $8,275</p>
+              <p>Quantity: 1</p>
+              <p><a href="#">modify</a> or <a href="#">remove</a></p>
 
-        <div class="cart-item">
-          <figure class="cart-preview image-link">
-            <a href="#"><img src="images/shoes4.jpg" alt="Model's legs wearing a pair of black boots"></a>
-          </figure>
+            </div>
+          </div>
+        </section>
+      </div> <!-- CART ITEMS END -->
 
-          <div class="cart-item-desc">
-            <h4>The Lunar Boot</h4>
-            <ul>
-              <li>Quantity: 1</li>
-              <li>Size: 6</li>
-              <li>Price: &#36;400.00</li>
-            </ul>
-            <p><a href="#">modify</a> or <a href="#">remove</a></p>
+      <div class="element grow-1"> <!-- CART SUMMARY START -->
+        <section class="check-out">
+        <h3>Cart Summary</h3>
+
+        <div class="cart-sections">
+          <div class="box">
+            <div class="grow-1">
+              <p>Subtotal:</p>
+            </div>
+
+            <div class="grow-1 subtotals">
+              <p>&#36;8,275.00</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="grow-1">
+              <p>Shipping:</p>
+            </div>
+
+            <div class="grow-1 subtotals">
+              <p>&#36;5.99</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="grow-1">
+              <p>Tax:</p>
+            </div>
+
+            <div class="grow-1 subtotals">
+              <p>&#36;993.00</p>
+            </div>
           </div>
         </div>
 
-        <div class="cart-item">
-          <figure class="cart-preview image-link">
-            <a href="#"><img src="images/shoes5.jpg" alt="A model wearing a pair of black shoes"></a>
-          </figure>
-
-          <div class="cart-item-desc">
-            <h4>The Nebula Shoe</h4>
-            <ul>
-              <li>Quantity: 2</li>
-              <li>Size: 7</li>
-              <li>Price: &#36;350.00</li>
-            </ul>
-            <p><a href="#">modify</a> or <a href="#">remove</a></p>
+          <div class="box">
+            <div class="grow-1">
+              <h3>Total</h3>
+            </div>
+            <div class="grow-1 total-price">
+              <p>&#36;9,273.99</p>
+            </div>
           </div>
-        </div>
 
-        <div class="cart-item">
-          <figure class="cart-preview image-link">
-            <a href="#"><img src="images/shoes6.jpg" alt="A model wearing a black dress and a pair of black shoes"></a>
-          </figure>
+          <button name="checkout" class="main-button" onclick="window.location.href='checkout.html'">Checkout</button>
 
-          <div class="cart-item-desc">
-            <h4>The Meteor Boot</h4>
-            <ul>
-              <li>Quantity: 1</li>
-              <li>Size: 7.5</li>
-              <li>Price: &#36;400.00</li>
-            </ul>
-            <p><a href="#">modify</a> or <a href="#">remove</a></p>
-          </div>
-        </div>
-
-        <div class="cart-total">
-          <h2>Summary: 4 Items</h2>
-            <ol id="total">
-              <li>Subtotal: &#36;1,500</li>
-              <li>Estimated Tax: &#36;180</li>
-              <li>Shipping: Free</li>
-            </ol>
-            <p>Estimated Total: &#36;1,680</p>
-            <button name="checkout" class="submit-button" onclick="window.location.href='checkout.html'">Checkout</button>
-        </div>
-      </div> <!-- //cart-items -->
-  </section> <!--//PAGE TEMPLATE END -->
+        </section>
+      </div> <!-- CART SUMMARY END -->
+      </div>
+    </div>
+  </main>
 
 
-  <section id="code_section">
-    <h2>Code</h2>
-      <!-- CODE FOR CHECKOUT CART -->
-  <pre><code>&lt;section id="page_template"&gt;
-    &lt;h2&gt;Cart&lt;/h2&gt;
-    &lt;h3&gt;Your Items&lt;/h3&gt;
+  <footer> <!-- START FOOTER -->
+    <div class="box container">
+      <div class="grow-1">
+        <h3>Resources</h3>
 
-    &lt;div class="cart-item-container"&gt;
+        <a href="style-guide.html">Style Guide</a>
+        <a href="citations.html">Citations</a>
+        <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
+      </div>
 
-      &lt;div class="cart-item"&gt;
-        &lt;figure class="cart-preview image-link"&gt;
-          &lt;a href="#"&gt;&lt;img src="images/shoes4.jpg" alt="a model wearing a pair of black shoes"&gt;&lt;/a&gt;
-        &lt;/figure&gt;
+      <div class="grow-1">
+        <h3>Contact Us</h3>
+        <p>#69 Meow Ave, Meow City</p>
+        <p>P.O. M1E2O3W</p>
+        <p>666-666-666</p>
+      </div>
 
-        &lt;div class="cart-item-desc"&gt;
-          &lt;h4&gt;The Lunar Boot&lt;/h4&gt;
-          &lt;ul&gt;
-            &lt;li&gt;Quantity: 1&lt;/li&gt;
-            &lt;li&gt;Size: 6&lt;/li&gt;
-            &lt;li&gt;Price: &#36;400.00&lt;/li&gt;
-          &lt;/ul&gt;
-          &lt;p&gt;&lt;a href="#"&gt;modify&lt;/a&gt; or &lt;a href="#"&gt;remove&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
+      <div class="grow-1">
+        <h3>Follow us!</h3>
+        <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+        <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+        <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+      </div>
 
-      &lt;div class="cart-item"&gt;
-        &lt;figure class="cart-preview image-link"&gt;
-          &lt;a href="#"&gt;&lt;img src="images/shoes5.jpg" alt="a model wearing a pair of black shoes"&gt;&lt;/a&gt;
-        &lt;/figure&gt;
-
-        &lt;div class="cart-item-desc"&gt;
-          &lt;h4&gt;The Nebula Shoe&lt;/h4&gt;
-          &lt;ul&gt;
-            &lt;li&gt;Quantity: 2&lt;/li&gt;
-            &lt;li&gt;Size: 7&lt;/li&gt;
-            &lt;li&gt;Price: &#36;350.00&lt;/li&gt;
-          &lt;/ul&gt;
-          &lt;p&gt;&lt;a href="#"&gt;modify&lt;/a&gt; or &lt;a href="#"&gt;remove&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      &lt;div class="cart-item"&gt;
-        &lt;figure class="cart-preview image-link"&gt;
-          &lt;a href="#"&gt;&lt;img src="images/shoes6.jpg" alt="a model wearing a pair of black shoes"&gt;&lt;/a&gt;
-        &lt;/figure&gt;
-
-        &lt;div class="cart-item-desc"&gt;
-          &lt;h4&gt;The Meteor Boot&lt;/h4&gt;
-          &lt;ul&gt;
-            &lt;li&gt;Quantity: 1&lt;/li&gt;
-            &lt;li&gt;Size: 7.5&lt;/li&gt;
-            &lt;li&gt;Price: &#36;400.00&lt;/li&gt;
-          &lt;/ul&gt;
-          &lt;p&gt;&lt;a href="#"&gt;modify&lt;/a&gt; or &lt;a href="#"&gt;remove&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      &lt;div class="cart-total"&gt;
-        &lt;h2&gt;Summary: 4 Items&lt;/h2&gt;
-          &lt;ol id="total"&gt;
-            &lt;li&gt;Subtotal: &#36;1,500&lt;/li&gt;
-            &lt;li&gt;Estimated Tax: &#36;180&lt;/li&gt;
-            &lt;li&gt;Shipping: Free&lt;/li&gt;
-          &lt;/ol&gt;
-          &lt;p&gt;Estimated Total: &#36;1,680&lt;/p&gt;
-          &lt;button name="checkout" class="submit-button" onclick="window.location.href='checkout.html'"&gt;Checkout&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;</code></pre>
-      <!-- // CODE FOR CART -->
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-
-    <!-- CITATIONS SECTION // -->
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from canvas.sfu.ca</li>
-        <li>Singh, V. (2010). <strong>Eczar [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Eczar">https://fonts.google.com/specimen/Eczar</a></li>
-        <li>Wei, H. (2014). <strong>Work Sans [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Work+Sans">https://fonts.google.com/specimen/Work+Sans</a></li>
-        <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
-        <li>Figure 1. <strong>[Model wearing black shoes][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
-        <li>Figure 2. <strong>[Model's legs wearing a pair of black boots][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
-        <li>Figure 3. <strong>[Model wearing black dress and shoes][Photograph].</strong>(n.d.). Retrieved from <a href="http://www.avvikk.com/aw15">http://www.avvikk.com/aw15</a></li>
-      </ul>
-    </section>
+      <div class="grow-1">
+        <form>
+          <h3><label for="email">Subscribe</label></h3>
+          <input type="text" name="email" id="email" placeholder="Email"/>
+        </form>
+        <button name="submit" class="main-button">Submit</button>
+      </div>
+    </div>
+  </footer><!-- END FOOTER -->
 
   </body>
 </html>

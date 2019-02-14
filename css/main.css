@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Miriam+Libre|Libre+Franklin:400,700');
-/*
-  font sources:
-  https://fonts.google.com/specimen/Libre+Franklin
-  https://fonts.google.com/specimen/Miriam+Libre
-*/
-
-/* MAIN CSS USED ACROSS MOST PAGES */
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre|Libre+Franklin:400,500,700');
 
 body{
   background-color: #fff;
   font-family: 'Libre Franklin', sans-serif;
   margin:0;
   overflow-wrap: break-word;
+  line-height: 1.5rem;
+}
+
+.container { /* for centering all content to take up 80% of screen */
+  width: 80%;
+  margin: auto;
+}
+
+main .container{
+  min-height: 62vh;
+  margin-bottom: 4rem;
 }
 
 /* header styling*/
-header{
-  padding-top:0;
-}
-
-.nav-container{ /* for link placement in navigation bars */
+.nav-container{
   margin:auto;
   width:80%;
 }
@@ -28,16 +28,14 @@ header{
 .main-nav{
   background-color: #446AAF;
   font-size: 0.8rem;
-  width:100%;
-  margin-top: 0;
 }
 
 .nav-link{
   border-bottom: 2px solid transparent;
   display: inline-block;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-right:3rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-right:1.5rem;
   padding: 1rem 0;
   text-transform: uppercase;
   text-align: center;
@@ -54,11 +52,18 @@ header{
   color: #EBEBEB;
 }
 
+.current-link{
+  border-bottom: 2px solid;
+}
+
+.nav-link-container{
+  text-align: right;
+  align-items: flex-end;
+}
+
 .logo-header{
   text-align: left;
-  width: 80%;
-  margin: auto;
-  padding-top: 1.5rem;
+  padding: 1rem 0;
 }
 
 .logo-header a{
@@ -68,44 +73,68 @@ header{
   color: #fff;
 }
 
+.logo-header a:focus{
+  border-bottom: 0px;
+}
 
+/* style guide styling */
 .style-guide-nav{
   background-color: #1E4CA1;
   margin-top: 0;
 }
 
-.current-link{
-  border-bottom: 2px solid;
-}
-
-/* main page/content width styling */
-#interactive_elements, #page_template{
-  padding:1rem 0 2rem;
-  /* border-bottom: 2px  #1E4CA1 solid; */
-  margin:auto;
-  width:80%;
-}
-
-#text_elements, #combined_elements, #brand_information, #design_elements, #citations, #code_section{
-  padding:3rem 0 2rem;
+/* style guide section styling */
+#interactive_elements,  #text_elements, #combined_elements, #design_elements, #code_section{
+  padding:2rem 0;
   border-bottom: 2px  #1E4CA1 solid;
-  margin:auto;
-  width:80%;
 }
 
-section{
-  width: 100%;
+#brand_information{
+  padding:3rem 0 2rem;
 }
 
-.element{
-  margin: 0 0 3rem 0;
-  padding-bottom: 1rem;
+.style-guide .element{
+  padding: 1rem 0;
   width:100%;
-  border-bottom: 2px  #1E4CA1 dotted;
+  border-bottom: 2px #1E4CA1 dotted;
 }
 
 .element:last-child{
   border-bottom: none;
+}
+
+.style-guide h2, h3, h4{
+  font-family: 'Miriam Libre', sans-serif;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.element-headings{
+  padding-top: 1rem;
+}
+
+.container-styleguide{
+  width: 80%;
+  margin:auto;
+}
+
+/* section styling product page*/
+.product-description{
+  padding-bottom: 2rem;
+  border-bottom: 2px #1E4CA1 dotted;
+}
+
+.user-reviews{
+  padding: 1rem 0;
+  border-bottom: 2px  #1E4CA1 dotted;
+}
+
+.review{
+  margin-top:2rem;
+}
+
+.write-review{
+  padding-top: 1rem;
 }
 
 /* text, links, image styling */
@@ -117,11 +146,6 @@ figure{
 h1{
   font-family: 'Miriam Libre', sans-serif;
   font-weight: 400;
-}
-
-h1.hero{
-  font-size: 4rem;
-  margin: 0.5rem 0 0.5rem 0;
 }
 
 h2, h3, h4{
@@ -172,16 +196,16 @@ label{
 }
 
 input{
+  display: inline-block;
   background-color: #EBEBEB;
   border: 0;
   padding: 0.5rem;
   transition: 0.2s;
-  margin-top: 1rem;
-
+  margin: 1rem 1rem 0 0;
 }
 
 input:hover, input:active, input:focus{
-  background-color: #C0C0C0;
+  background-color: #d7d4d4;
 }
 
 input[type=text]{
@@ -193,10 +217,33 @@ input[type=radio]{
   margin: 0.8rem 0.2rem 0.5rem 0;
 }
 
+textarea{
+  display: block;
+  margin-top: 1rem;
+  background-color: #EBEBEB;
+  border:none;
+  padding: 0.5rem;
+  width: 100%;
+  height: 10rem;
+}
+
+select{
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #EBEBEB;
+  border:none;
+}
+
+textarea:hover, textarea:active, textarea:focus,
+select:hover, select:active, select:focus{
+  background-color: #d7d4d4;
+}
+
 .h1-example{
   font-size: 2rem;
   margin:0;
   font-family: 'Miriam Libre', sans-serif;
+  line-height: normal;
 }
 
 code{
@@ -218,12 +265,6 @@ pre{
 }
 
 /* button styling */
-#example-buttons{ /*specifically for style guide*/
-  padding: 1rem;
-  width:20rem;
-  background-color: #446AAF;
-}
-
 button{
   padding:1rem;
   margin-top: 1rem;
@@ -243,18 +284,15 @@ button:active{
   box-shadow: 6px 6px;
 }
 
-.reset-button{
+.secondary-button{ /*change this to secondary-button*/
   background-color: #EBEBEB;
   border: 1px transparent;
 }
 
-.submit-button{
+.main-button{ /*change this to main-button*/
   background-color: #FF6700;
   color: #fff;
-  border-top: 1px transparent;
-  border-right: 1px #446AAF solid;
-  border-bottom: 1px #446AAF solid;
-  border-left: 1px transparent;
+  border: 1px transparent;
   transition: 0.3s;
 }
 
@@ -284,40 +322,41 @@ ol li::before {
   padding-right: 0.25rem;
 }
 
-/*FOOTER STYLING */
+/* FOOTER STYLING */
 footer{
-  width: 100%;
   background-color: #e2e2e2;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 3rem 0rem 6rem 0rem;
   margin: 0;
 }
 
 footer a {
   display: block;
-  font-size: 0.9rem;
   margin: 0.5rem 0 0.5rem 0;
+  transition: 0.2s;
 }
 
-footer a:hover, footer a:focus {
-  text-decoration: underline;
+footer a:hover, footer a:focus, a:active {
+  color:black;
+  font-weight: bold;
+  transition: 0.2s;
+  border-bottom: none;
 }
 
 footer p {
   line-height: 1rem;
-  margin-bottom: -0.5rem;
 }
 
 footer img {
-  width: 15%;
+  width: 10%;
   margin-right: 0.5rem;
 }
 
-footer label, footer h2, footer h3 {
-  margin-top: 0.5rem;
+footer img:hover{
+  cursor: pointer;
 }
 
-.footer-column{
-  margin-right: 1rem;
+footer label, footer h2, footer h3 {
+  margin: 0.5rem 0 1rem 0;
 }
 
 /* style guide styling of example text and colours section */
@@ -326,11 +365,11 @@ footer label, footer h2, footer h3 {
   margin: 0;
 }
 
-.eczar{
+.miriam-libre{
   font-family: 'Miriam Libre', sans-serif;
 }
 
-.worksans{
+.libre-franklin{
   font-family: 'Libre Franklin', sans-serif;
   margin-top: 2rem;
 }
@@ -347,7 +386,7 @@ footer label, footer h2, footer h3 {
 }
 
 .accent1-colour{
-  background-color: #C0C0C0;
+  background-color: #d7d4d4;
 }
 
 .accent2-colour{
@@ -365,94 +404,74 @@ footer label, footer h2, footer h3 {
   border: 1px solid transparent;
 }
 
-.poster-inspiration{
-  max-width: 24rem;
-  padding:1rem;
-}
-
-/* PRODUCT PAGE  */
-.product-info{
-  width: inherit;
-}
-
-/* CART PAGE */
-.checkout-container{
-  height: 15em;
-  margin-bottom: 1rem;
-}
-
-.checkout-cart, .payment-form{
-  margin:0;
-}
-
-#total{ /* id for ol */
-  border-bottom: 2px  #1E4CA1 dotted;
-  padding-bottom: 1rem;
-}
-
-.cart-total{
-  padding: 0 1rem 1rem 1rem;
-  background-color: #446AAF;
-}
-
-/* CHECKOUT PAGE */
-.payment-form h4{
-  margin-top:0;
-}
-
 /* homepage */
-
-.hero-container{
+.hero-container {
   position: relative;
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 12rem 2rem;
+  background-color: #000;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.hero-container#cool-pans {
+    /* set two backgrounds, one with a linear-gradient (can be one colour)
+       and the other is the image. look it up at mdn if you want more info
+       -coding help from Ashley Tsang */
+  background: linear-gradient(rgba(255,255,255, 0.1), rgba(0, 0, 0, 0.75)),
+    center / cover no-repeat url("../images/cast-iron-pans.jpg")
+}
+
+.hero-container#our-pans {
+  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.75)),
+    center / cover no-repeat url("../images/pubg-01.jpg")
+}
+
+.hero-container a{
+  color: white;
+  transition: 0.2s;
+}
+
+.hero-container a:hover, a:focus, a:active{
+  color: white;
+  transition: 0.2s;
 }
 
 .hero-text-right {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  width: 40%;
+  width: 50%;
+  margin-left: 50%;
 }
 
 .hero-text-left {
-  position: absolute;
-  bottom: 50%;
   right: 50%;
-  width: 40%;
+  width: 50%;
   text-align: right;
 }
 
 h1.hero{
   font-family: 'Miriam Libre', sans-serif;
   font-weight: 400;
-  font-size: 5rem;
-}
-
-.hero2{
-  width: 50%;
-  float: left;
-  display: inline-block;
+  font-size: 4rem;
+  line-height: 100%;
 }
 
 .hero2-text {
-  width: 49%;
-  text-align: center;
-  display: inline-block;
-
+  padding:1rem;
   margin: auto;
-  justify-content:center;
+  width: 80%;
+}
 
-  min-height: 600px;
+.hero2 img{
+  vertical-align: bottom;
+  width: 100%;
+}
+
+p.tagline{
+  font-weight: bold;
 }
 
 /* NEW CHECKOUT PAGE */
-.container {
-  width: 80%;
-  margin: auto;
-}
-
 .check-out {
   margin-left: 2em;
 }
@@ -462,7 +481,7 @@ h1.hero{
 }
 
 .checkout-preview img {
-  width: 94%;
+  width: 100%;
 }
 
 .subtotals {
@@ -471,27 +490,28 @@ h1.hero{
   text-align: right;
 }
 
-.total-price {
-  text-align: right;
-}
-
 .total-price p {
   font-size: 2em;
   font-weight: 700;
   line-height: 0;
+  text-align: right;
 }
 
 .cart-sections {
   padding-bottom: 1em;
   margin-bottom: 1em;
-  border-bottom: 0.09em solid #b5b5b5;
+  border-bottom: 1px  #1E4CA1 solid;
 }
 
 .cart-sections p{
-  line-height: 0.7em;
+  line-height: 0.5rem;
 }
 
-/* media query */
+.product-detail{
+  margin-left: 2rem;
+}
+
+/* media queries */
 @media only screen and (max-width: 790px) {
   .element{
     margin: 2rem 0 0 0;
@@ -499,5 +519,25 @@ h1.hero{
 
   .check-out {
     margin-left: 0em;
+  }
+
+  .hero-text-right {
+      width: 80%;
+      margin: auto;
+      text-align: left;
+  }
+
+  .hero-text-left {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+  }
+
+  .product-detail{
+    margin-left:0;
+  }
+
+  .nav-link-container{
+    text-align: left;
   }
 }

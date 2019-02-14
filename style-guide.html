@@ -13,14 +13,17 @@
 
     <!-- HEADER SECTION -->
     <header>
-      <h1>Cool Pans</h1>
-
       <nav class="main-nav">
-        <div class="nav-container">
-          <a class="nav-link current-link" href="#">Style Guide</a>
-          <a class="nav-link" href="#">Pans</a>
-          <a class="nav-link" href="#">Cart</a>
-          <a class="nav-link" href="#">Checkout</a>
+        <div class="container nav-box">
+          <div class="logo-header grow-1">
+            <a href="index.html">Cool Pans</a>
+          </div>
+          <div class="nav-link-container grow-1">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="checkout.html">Cart</a>
+          </div>
         </div>
       </nav>
 
@@ -37,6 +40,9 @@
     </header>
     <!-- //END HEADER SECTION -->
 
+<main>
+<!-- CONTENT -->
+<div class="container style-guide">
     <!-- INTERACTIVE ELEMENTS SECTION -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
@@ -46,7 +52,7 @@
         <h3>Standard In-text Link</h3>
         <p>This is a sentence. Here is a <a href="#">link.</a></p>
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <code>&lt;p&gt;This is a sentence. Here is a &lt;a href="#"&gt;link.&lt;/a&gt;&lt;/p&gt;</code>
       </section>
 
@@ -59,12 +65,12 @@
           </div>
         </nav>
 
-        <h4>CSS Selectors</h4>
+        <h4 class="element-headings">CSS Selectors</h4>
         <p>.main-nav</p>
         <p>.nav-container</p>
         <p>.nav-link</p>
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <pre><code>&lt;nav class="main-nav"&gt;
   &lt;div class="nav-container"&gt;
     &lt;a class="nav-link" href="#"&gt;Navigation Link&lt;/a&gt;
@@ -76,18 +82,22 @@
       <section class="element">
         <h3>Submit and Reset Buttons</h3>
 
-        <div id="example-buttons">
-          <button name="submit" class="submit-button">Submit</button>
-          <button name="reset" class="reset-button">Reset</button>
+        <div class="box">
+          <div class="grow-1">
+            <button name="submit" class="main-button">Submit</button>
+          </div>
+          <div class="grow-1">
+            <button name="reset" class="secondary-button">Reset</button>
+          </div>
         </div>
 
-        <h4>CSS Selectors</h4>
-        <p>.submit-button</p>
-        <p>.reset-button</p>
+        <h4 class="element-headings">CSS Selectors</h4>
+        <p>.main-button</p>
+        <p>.secondary-button</p>
 
-        <h4>Code</h4>
-        <code>&lt;button name="submit" class="submit-button"&gt;Submit&lt;/button&gt;<br />
-        &lt;button name="reset" class="reset-button"&gt;Reset&lt;/button&gt;</code>
+        <h4 class="element-headings">Code</h4>
+        <code>&lt;button name="submit" class="main-button"&gt;Submit&lt;/button&gt;<br />
+        &lt;button name="reset" class="secondary-button"&gt;Reset&lt;/button&gt;</code>
       </section>
 
       <!-- Text Input Field and Label styling section -->
@@ -99,7 +109,7 @@
         </form>
 
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <code>&lt;label for="first_name&gt;First Name&lt;/label&gt;<br />
           &lt;input type="text" name="first_name" id="first_name" placeholder="First name here"/&gt;
         </code>
@@ -112,7 +122,7 @@
         <input type="radio" name="shipping" id="standard_shipping" value="Standard Shipping"> Standard Shipping <br />
         <input type="radio" name="shipping" id="express_shipping" value="Express Shipping"> Express Shipping
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <code>
           &lt;label>Shipping Options&lt;/label&gt;<br />
           &lt;input type="radio" name="shipping" id="standard_shipping" value="Standard Shipping"&gt; Standard Shipping <br />
@@ -124,16 +134,16 @@
       <section class="element">
         <h3>Image as a Link</h3>
         <figure class="image-link">
-          <a href="#"><img src="images/pubg-01.jpg" alt="two pairs of gray shoes on a gold background"/></a>
-          <a href="#"><img src="images/spy-02.jpg" alt="two pairs of gray shoes on a gold background"/></a>
+          <a href="#"><img src="images/pubg-01.jpg" alt="a man from the PUBG live action trailer holding a gun and cast iron pan"/></a>
+          <a href="#"><img src="images/spy-02.jpg" alt="Melissa McCarthy protecting herself with a frying pan in the movie Spy"/></a>
 
-          <figcaption>CAPTION</figcaption>
+          <figcaption>Above: A still from the PUBG live action trailer. Below: A still from the 2015 movie, Spy. </figcaption>
         </figure>
 
-        <h4>CSS Selectors</h4>
+        <h4 class="element-headings">CSS Selectors</h4>
         <p>.image-link</p>
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <pre><code>&lt;figure class="image-link"&gt;
   &lt;a href="#"&gt;  &lt;img src="images/shoes1.jpg" alt="two pairs of gray shoes on a gold background"/&gt;  &lt;/a&gt;
 &lt;/figure&gt;</code></pre>
@@ -154,7 +164,7 @@
           <h3>H3 header (Sub Section Heading)</h3>
           <h4>H4 header (Secondary Sub Section Heading Heading)</h4>
 
-          <h4>Code</h4>
+          <h4 class="element-headings">Code</h4>
           <code>
             &lt;h1&gt;H1 header (Page Title)&lt;/h1&gt;<br />
             &lt;h2&gt;H2 header (Section Heading)&lt;/h2&gt;<br />
@@ -168,7 +178,7 @@
         <h3>Paragraphs</h3>
         <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac arcu libero. Pellentesque mattis tincidunt bibendum. Duis tincidunt dui at egestas ultricies. Mauris tincidunt, sapien sit amet mollis commodo, neque nulla facilisis tortor, ac porta eros sem vitae orci.</p>
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <code>
           &lt;p&gt;This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac arcu libero. Pellentesque mattis tincidunt bibendum. Duis tincidunt dui at egestas ultricies. Mauris tincidunt, sapien sit amet mollis commodo, neque nulla facilisis tortor, ac porta eros sem vitae orci.&lt;/p&gt;
         </code>
@@ -182,7 +192,7 @@
           <li>Cast Iron Pan</li>
         </ol>
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <pre><code>&lt;ol&gt;
     &lt;li>Frying Pan&lt;/li&gt;
     &lt;li>Cast Iron Pan&lt;/li&gt;
@@ -199,20 +209,26 @@
       <!-- Navigation styling -->
       <section class="element">
         <h3>Main Navigation</h3>
+
         <nav class="main-nav">
-          <div class="nav-container">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Pans</a>
-            <a class="nav-link" href="#">About Cool Pans</a>
+          <div class="container-styleguide nav-box">
+            <div class="nav-link-container grow-1">
+                <a class="nav-link current-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html#about">About</a>
+                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="checkout.html">Cart</a>
+            </div>
           </div>
         </nav>
 
-        <h4>Code</h4>
+        <h4 class="element-headings">Code</h4>
         <pre><code>&lt;nav class="main-nav"&gt;
-  &lt;div class="nav-container"&gt;
-    &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
-    &lt;a class="nav-link" href="#"&gt;Pans&lt;/a&gt;
-    &lt;a class="nav-link" href="#"&gt;About Cool Pans&lt;/a&gt;
+  &lt;div class="container nav-box"&gt;
+    &lt;div class="nav-link-container grow-1"&gt;
+      &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
+      &lt;a class="nav-link" href="#"&gt;Pans&lt;/a&gt;
+      &lt;a class="nav-link" href="#"&gt;About Cool Pans&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
       </section>
@@ -223,17 +239,20 @@
     <!-- DESIGN ELEMENTS SECTION -->
     <section id="design_elements">
       <h2>Design Elements</h2>
+
+      <!-- font section -->
       <section class="element">
         <h3>Fonts</h3>
-        <p class="font-example eczar">Miriam Libre (Headings)</p>
+        <p class="font-example miriam-libre">Miriam Libre (Headings)</p>
         <p class="display-header">regular and <strong>bold</strong></p>
         <p>serif font for headings, <a href="https://fonts.google.com/specimen/Miriam+Libre">Google Fonts</a></p>
 
-        <p class="font-example worksans">Libre Franklin (Copy Text)</p>
+        <p class="font-example libre-franklin">Libre Franklin (Copy Text)</p>
         <p>regular, <em>italicized</em>, and <strong>bold</strong></p>
         <p>sans serif font for copy text, <a href="https://fonts.google.com/specimen/Libre+Franklin">Google Fonts</a></p>
       </section>
 
+      <!-- colours section -->
       <section class="element">
         <h3>Colours</h3>
 
@@ -252,7 +271,7 @@
 
           <div class="colour-block accent1-colour">
             <h4>Accent 1</h4>
-            <p>HEX #C0C0C0</p>
+            <p>HEX #D7D4D4</p>
             <p>Header background, secondary buttons</p>
           </div>
 
@@ -276,17 +295,17 @@
         </div>
       </section>
 
+      <!-- images section -->
       <section class="element">
         <h3>Images</h3>
         <p>Some images to be used on product pages and throughout website.</p>
 
         <div class="product-container">
-            <figure class="product on-style-guide"><img src="images/products/pan-01.jpg" alt="pan"></figure>
-            <figure class="product on-style-guide"><img src="images/products/pan-02.jpg" alt="pan"></figure>
-            <figure class="product on-style-guide"><img src="images/products/pan-03.jpg" alt="pan"></figure>
+            <figure class="product"><img src="images/products/pan-01.jpg" alt="pan"></figure>
+            <figure class="product"><img src="images/products/pan-02.jpg" alt="pan"></figure>
+            <figure class="product"><img src="images/products/pan-03.jpg" alt="pan"></figure>
         </div>
       </section>
-
     </section>
     <!-- // DESGIN ELEMENTS SECTION -->
 
@@ -303,32 +322,48 @@
           <ul>
             <li>Movie fanatics</li>
             <li>Prop collectors</li>
-            <li>Need to cook an egg</li>
           </ul>
       </section>
-      </section>
-  </section>
+    </section>
     <!-- // BRANDING ELEMENTS SECTION -->
 
+</div>
+<!-- END CONTENT-->
+</main>
 
-    <!-- CITATIONS SECTION -->
-    <section id="citations">
-      <h2>Citations</h2>
+<footer> <!-- START FOOTER -->
+  <div class="box container">
+    <div class="grow-1">
+      <h3>Resources</h3>
 
-      <ul>
-        <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from canvas.sfu.ca</li>
-        <li>Sahar, M. (2010). <strong>Miriam Libre [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Miriam+Libre">https://fonts.google.com/specimen/Miriam+Libre</a></li>
-        <li>Impallari Type. (2014). <strong>Libre Franklin [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Libre+Franklin">https://fonts.google.com/specimen/Libre+Franklin</a></li>
-        <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
+      <a href="style-guide.html">Style Guide</a>
+      <a href="citations.html">Citations</a>
+      <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
+    </div>
 
-        <li>Spy (2011)<strong>[image]</strong> Retrieved from film.</li>
-        <li>PUBG - Official PlayStation 4 Launch - Pan-demonium Trailer (2018)<strong>[image]</strong> Retrieved from <a href="https://www.youtube.com/watch?v=bgwrB9qZZg0"> https://www.youtube.com/watch?v=bgwrB9qZZg0</a></li>
+    <div class="grow-1">
+      <h3>Contact Us</h3>
+      <p>#69 Meow Ave, Meow City</p>
+      <p>P.O. M1E2O3W</p>
+      <p>666-666-666</p>
+    </div>
 
-        <li>DHgate<strong>Big Size High Quality All Metal Made PUBG Pan Game Cosplay Props with PUBG LOGO [image].</strong> Retrieved from <a href="https://www.dhgate.com/product/big-size-high-quality-all-metal-made-pubg/416224961.html">https://www.dhgate.com/product/big-size-high-quality-all-metal-made-pubg/416224961.html</a></li>
-        <li>Wilko <strong>[image].</strong> Retrieved from <a href="https://www.wilko.com/en-uk/wilko-functional-non-stick-frying-pan-24cm-black/p/0221116">https://www.wilko.com/en-uk/wilko-functional-non-stick-frying-pan-24cm-black/p/0221116</a></li>
-        <li>Horeca-r Commerical Riveted Cookware<strong>[image]].</strong> Retrieved from <a href="https://sitramusa.com/product/horeca-r-fry-pan/">https://sitramusa.com/product/horeca-r-fry-pan/</a></li>
-      </ul>
-    </section>
+    <div class="grow-1">
+      <h3>Follow us!</h3>
+      <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+      <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+      <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+    </div>
+
+    <div class="grow-1">
+      <form>
+        <h3><label for="email">Subscribe</label></h3>
+        <input type="text" name="email" id="email" placeholder="Email"/>
+      </form>
+      <button name="submit" class="main-button">Submit</button>
+    </div>
+  </div>
+</footer><!-- END FOOTER -->
 
   </body>
 </html>

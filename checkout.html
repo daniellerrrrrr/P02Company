@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Solaris | Checkout</title>
+    <title>Cool Pans | Checkout</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/grids.css" />
@@ -13,176 +13,179 @@
 
     <!-- HEADER SECTION -->
     <header>
-      <h1>Solaris</h1>
-
       <nav class="main-nav">
-        <div class="nav-container">
-          <a class="nav-link" href="style-guide.html">Style Guide</a>
-          <a class="nav-link" href="shoes.html">Shoes</a>
-          <a class="nav-link" href="cart.html">Cart</a>
-          <a class="nav-link current-link" href="checkout.html">Checkout</a>
+        <div class="container nav-box">
+          <div class="logo-header grow-1">
+            <a href="index.html">Cool Pans</a>
+          </div>
+          <div class="nav-link-container grow-1">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="cart.html">Cart</a>
+          </div>
         </div>
       </nav>
     </header>
-    <!-- //END HEADER SECTION -->
 
-    <section id="page_template">
-      <h2>Checkout</h2>
-      <h3>Payment Information</h3>
+<main>
+    <div class="container">
+    <h1> Checkout</h1>
 
-      <div class="payment-container">
+    <div class="box">
+      <section class="grow-1">
+        <h3 class="section-headings">Payment Form</h3>
 
-        <section class="payment-form">
-          <h4>Secure Payment</h4>
-            <form action="#" method="post">
-            <label>Card Type</label>
-            <input type="radio" name="card_type" value="visa" id="visa"/> Visa
-            <input type="radio" name="card_type" value="mastercard" id="mastercard"/> Mastercard
+        <form method="post" action="#">
+          <label for="form-email">Contact Information</label>
+          <input type="text" id="form-email" placeholder="email@example.com">
 
-            <label for="card_name">Name on Card</label>
-            <input type="text" name="card_name" id="card_name" placeholder="Your Name"/>
 
-            <label for="card_number">Card Number</label>
-            <input type="text" name="card_number" id="card_number" placeholder="xxxxxxxxxxxx" maxlength="16"/>
+          <label for="form-firstName">Shipping Information</label>
 
-            <label for="expiry">Expiry Date (MM/YY)</label>
-            <input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/>
+          <div class="box">
+            <div class="grow-1">
+              <input type="text" id="form-firstName" placeholder="First name">
+            </div>
+            <div class="grow-1">
+              <input type="text" id="form-lastName" placeholder="Last name">
+            </div>
+          </div>
 
-            <label for="security_code">Security Code</label>
-            <input type="text" name="security_code" id="security_code" placeholder="xxx" maxlength="5"/>
+          <input type="text" id="form-address" placeholder="Address">
+          <input type="text" id="form-city" placeholder="City">
 
-            <label for="phone_number">Phone Number</label>
-            <input type="text" name="phone_number" id="phone_number" placeholder="1234567890"/>
-          </form>
-    </section>
 
-    <section class="payment-form">
-    <h4>Billing Address</h4>
-      <form action="#" method="post">
-        <input type="checkbox" name="billing_address" id="billing_address"/> Use my shipping address
+          <label for="form-lastName">Payment Information</label>
+          <input type="radio" name="option" value="visa">Visa
+          <input type="radio" name="option" value="mastercard">Mastercard
+          <input type="radio" name="option" value="interac">Interac
 
-        <p>Your Name<br /> 1234 Avenue<br /> City, Province<br /> A1B 2C3</p>
+          <div class="sub-element">
+            <input type="text" id="name-on-card" placeholder="Name on Card">
+            <input type="text" id="card-number" placeholder="Card Number">
 
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name" id="first_name" placeholder="First Name"/>
+            <div class="box">
+              <div class="grow-1">
+                <input type="text" id="exp-date" placeholder="MM/YYYY">
+              </div>
+              <div class="grow-1">
+                <input type="text" id="cvv" placeholder="CVV">
+              </div>
+            </div>
+          </div>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name" id="last_name" placeholder="Last Name"/>
+          <div class="box">
+            <div class="grow-1">
+              <button name="submit" class="main-button">Submit</button>
+            </div>
+            <div class="grow-1">
+              <button name="reset" class="secondary-button">Reset</button>
+            </div>
+          </div>
 
-        <label for="street_number">Street Number</label>
-        <input type="text" name="street_number" id="street_number" placeholder="1234 Avenue"/>
+        </form>
 
-        <label for="country">Country</label>
-        <input type="text" name="country" id="country" placeholder="Country"/>
-
-        <label for="province">Province</label>
-        <input type="text" name="province" id="province" placeholder="Province"/>
-
-        <label for="postal_code">Postal Code</label>
-        <input type="text" name="postal_code" id="postal_code" placeholder="A1B2C3" maxlength="6"/>
-      </form>
-    </section>
-
-      <section class="cart-total">
-        <h2>Summary: 4 Items</h2>
-        <ol id="total">
-          <li>Subtotal: &#36;1,500</li>
-          <li>Tax: &#36;187.5</li>
-          <li>Shipping: Free</li>
-        </ol>
-        <p>Estimated Total: &#36;1,687.5</p>
-        <button name="checkout" class="submit-button">Checkout</button>
-        <button name="back" class="reset-button" onclick="window.location.href='cart.html'">Back to Cart</button> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
       </section>
+
+      <section class="element grow-1">
+        <section class="check-out">
+        <h3 class="section-headings">Shopping Cart</h3>
+
+          <section class="product-checkout">
+            <div class="box">
+              <div class="grow-1 checkout-preview">
+                <img src="images/products/pan-03.jpg" alt="product" >
+              </div>
+              <div class="grow-1">
+                <h4 class="item-name">Stainless Steel Frying Pan</h4>
+                <p>Price: $8,275</p>
+                <p>Quantity: 1</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="cart-sections">
+            <div class="box">
+              <div class="grow-1">
+                <p>Subtotal:</p>
+              </div>
+
+              <div class="grow-1 subtotals">
+                <p>&#36;8,275.00</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="grow-1">
+                <p>Shipping:</p>
+              </div>
+
+              <div class="grow-1 subtotals">
+                <p>&#36;5.99</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="grow-1">
+                <p>Tax:</p>
+              </div>
+
+              <div class="grow-1 subtotals">
+                <p>&#36;993.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="grow-1">
+              <h3>Total</h3>
+            </div>
+            <div class="grow-1 total-price">
+              <p>&#36;9,273.99</p>
+            </div>
+          </div>
+
+        </section>
+      </section>
+      </div>
     </div>
-  </section> <!-- //END PAYMENT SECTION -->
+</main>
 
-  <!-- CODE -->
-  <section id="code_section">
-    <h2>Code</h2>
-    <pre><code>&lt;section id="page_template"&gt;
-  &lt;h2&gt;Checkout&lt;/h2&gt;
-  &lt;h3&gt;Payment Information&lt;/h3&gt;
 
-  &lt;div class="payment-container"&gt;
+<footer> <!-- START FOOTER -->
+  <div class="box container">
+    <div class="grow-1">
+      <h3>Resources</h3>
 
-    &lt;section class="payment-form"&gt;
-      &lt;h4&gt;Secure Payment&lt;/h4&gt;
-        &lt;form action="#" method="post"&gt;
-        &lt;label&gt;Card Type&lt;/label&gt;
-        &lt;input type="radio" name="card_type" value="visa" id="visa"/&gt; Visa
-        &lt;input type="radio" name="card_type" value="mastercard" id="mastercard"/&gt; Mastercard
+      <a href="style-guide.html">Style Guide</a>
+      <a href="citations.html">Citations</a>
+      <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
+    </div>
 
-        &lt;label for="card_name"&gt;Name on Card&lt;/label&gt;
-        &lt;input type="text" name="card_name" id="card_name" placeholder="Your Name"/&gt;
+    <div class="grow-1">
+      <h3>Contact Us</h3>
+      <p>#69 Meow Ave, Meow City</p>
+      <p>P.O. M1E2O3W</p>
+      <p>666-666-666</p>
+    </div>
 
-        &lt;label for="card_number"&gt;Card Number&lt;/label&gt;
-        &lt;input type="text" name="card_number" id="card_number" placeholder="xxxxxxxxxxxx" maxlength="16"/&gt;
+    <div class="grow-1">
+      <h3>Follow us!</h3>
+      <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+      <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+      <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+    </div>
 
-        &lt;label for="expiry"&gt;Expiry Date (MM/YY)&lt;/label&gt;
-        &lt;input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/&gt;
-
-        &lt;label for="security_code"&gt;Security Code&lt;/label&gt;
-        &lt;input type="text" name="security_code" id="security_code" placeholder="xxx" maxlength="5"/&gt;
-
-        &lt;label for="phone_number"&gt;Phone Number&lt;/label&gt;
-        &lt;input type="text" name="phone_number" id="phone_number" placeholder="1234567890"/&gt;
-      &lt;/form&gt;
-    &lt;/section&gt;
-
-    &lt;section class="payment-form"&gt;
-    &lt;h4&gt;Billing Address&lt;/h4&gt;
-      &lt;form action="#" method="post"&gt;
-        &lt;input type="checkbox" name="billing_address" id="billing_address"/&gt; Use my shipping address
-
-        &lt;p&gt;Your Name&lt;br /&gt; 1234 Avenue&lt;br /&gt; City, Province&lt;br /&gt; A1B 2C3&lt;/p&gt;
-
-        &lt;label for="first_name"&gt;First Name&lt;/label&gt;
-        &lt;input type="text" name="first_name" id="first_name" placeholder="First Name"/&gt;
-
-        &lt;label for="last_name"&gt;Last Name&lt;/label&gt;
-        &lt;input type="text" name="last_name" id="last_name" placeholder="Last Name"/&gt;
-
-        &lt;label for="street_number"&gt;Street Number&lt;/label&gt;
-        &lt;input type="text" name="street_number" id="street_number" placeholder="1234 Avenue"/&gt;
-
-        &lt;label for="country"&gt;Country&lt;/label&gt;
-        &lt;input type="text" name="country" id="country" placeholder="Country"/&gt;
-
-        &lt;label for="province"&gt;Province&lt;/label&gt;
-        &lt;input type="text" name="province" id="province" placeholder="Province"/&gt;
-
-        &lt;label for="postal_code"&gt;Postal Code&lt;/label&gt;
-        &lt;input type="text" name="postal_code" id="postal_code" placeholder="A1B2C3" maxlength="6"/&gt;
-      &lt;/form&gt;
-    &lt;/section&gt;
-
-    &lt;section class="cart-total"&gt;
-      &lt;h2&gt;Summary: 4 Items&lt;/h2&gt;
-      &lt;ol id="total"&gt;
-        &lt;li&gt;Subtotal: &#36;1,500&lt;/li&gt;
-        &lt;li&gt;Tax: &#36;187.5&lt;/li&gt;
-        &lt;li&gt;Shipping: Free&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;p&gt;Estimated Total: &#36;1,687.5&lt;/p&gt;
-      &lt;button name="checkout" class="submit-button"&gt;Checkout&lt;/button&gt;
-      &lt;button name="back" class="reset-button" onclick="window.location.href='cart.html'"&gt;Back to Cart&lt;/button&gt;
-    &lt;/section&gt;
-  &lt;/div&gt;
-&lt;/section&gt;</code></pre>
-  </section> <!-- //payment section -->
-
-    <!-- CITATIONS SECTION // -->
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li>Serban, H. (2018). <strong>P01 - Style Guide Template [html template].</strong> Retrieved from canvas.sfu.ca</li>
-        <li>Singh, V. (2010). <strong>Eczar [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Eczar">https://fonts.google.com/specimen/Eczar</a></li>
-        <li>Wei, H. (2014). <strong>Work Sans [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Work+Sans">https://fonts.google.com/specimen/Work+Sans</a></li>
-        <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
-      </ul>
-    </section>
+    <div class="grow-1">
+      <form>
+        <h3><label for="email">Subscribe</label></h3>
+        <input type="text" name="email" id="email" placeholder="Email"/>
+      </form>
+      <button name="submit" class="main-button">Submit</button>
+    </div>
+  </div>
+</footer><!-- END FOOTER -->
 
   </body>
 </html>
