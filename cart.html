@@ -33,7 +33,7 @@
     <h1>Your Cart</h1>
 
     <div class="box">
-      <section class="grow-1"> <!-- CART ITEMS START -->
+      <div class="grow-1"> <!-- CART ITEMS START -->
         <section class="product-checkout">
           <div class="box">
             <div class="grow-1 checkout-preview">
@@ -48,26 +48,43 @@
             </div>
           </div>
         </section>
-      </section> <!-- CART ITEMS END -->
+      </div> <!-- CART ITEMS END -->
 
-      <section class="element grow-1"> <!-- CART SUMMARY START -->
+      <div class="element grow-1"> <!-- CART SUMMARY START -->
         <section class="check-out">
         <h3>Cart Summary</h3>
 
-
-          <div class="box cart-sections">
+        <div class="cart-sections">
+          <div class="box">
             <div class="grow-1">
               <p>Subtotal:</p>
-              <p>Shipping:</p>
-              <p>Tax:</p>
             </div>
 
             <div class="grow-1 subtotals">
               <p>&#36;8,275.00</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="grow-1">
+              <p>Shipping:</p>
+            </div>
+
+            <div class="grow-1 subtotals">
               <p>&#36;5.99</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="grow-1">
+              <p>Tax:</p>
+            </div>
+
+            <div class="grow-1 subtotals">
               <p>&#36;993.00</p>
             </div>
           </div>
+        </div>
 
           <div class="box">
             <div class="grow-1">
@@ -78,49 +95,48 @@
             </div>
           </div>
 
-          <button name="checkout" class="submit-button" onclick="window.location.href='checkout.html'">Checkout</button>
+          <button name="checkout" class="main-button" onclick="window.location.href='checkout.html'">Checkout</button>
 
         </section>
-      </section> <!-- CART SUMMARY END -->
+      </div> <!-- CART SUMMARY END -->
       </div>
     </div>
   </main>
 
 
-    <footer> <!-- START FOOTER -->
-      <div class="box container">
-        <div class="grow-1">
-          <h3>Resources</h3>
+  <footer> <!-- START FOOTER -->
+    <div class="box container">
+      <div class="grow-1">
+        <h3>Resources</h3>
 
-          <a href="style-guide.html">Style Guide</a>
-          <a href="#">Citations</a>
-          <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
-        </div>
-
-        <div class="grow-1">
-          <h3>Contact Us</h3>
-          <p>#69 Meow Ave</p>
-          <p>Meow City, C. C.</p>
-          <p>M1E O3W</p>
-          <p>666-666-666</p>
-        </div>
-
-        <div class="grow-1">
-          <h3>Follow us!</h3>
-          <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
-          <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
-          <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
-        </div>
-
-        <div class="grow-1">
-          <form>
-            <h3><label for="email">Subscribe</label></h3>
-            <input type="text" name="email" id="email" placeholder="Email"/>
-          </form>
-          <button name="submit" class="submit-button">Submit</button>
-        </div>
+        <a href="style-guide.html">Style Guide</a>
+        <a href="citations.html">Citations</a>
+        <a href="https://github.com/daniellerrrrrr/P02Company">Github</a>
       </div>
-    </footer><!-- END FOOTER -->
+
+      <div class="grow-1">
+        <h3>Contact Us</h3>
+        <p>#69 Meow Ave, Meow City</p>
+        <p>P.O. M1E2O3W</p>
+        <p>666-666-666</p>
+      </div>
+
+      <div class="grow-1">
+        <h3>Follow us!</h3>
+        <img src="images/social-icons/google-plus-square-brands.svg" alt="google plus">
+        <img src="images/social-icons/pinterest-square-brands.svg" alt="pinterest">
+        <img src="images/social-icons/tumblr-square-brands.svg" alt="tumblr">
+      </div>
+
+      <div class="grow-1">
+        <form>
+          <h3><label for="email">Subscribe</label></h3>
+          <input type="text" name="email" id="email" placeholder="Email"/>
+        </form>
+        <button name="submit" class="main-button">Submit</button>
+      </div>
+    </div>
+  </footer><!-- END FOOTER -->
 
   </body>
 </html>

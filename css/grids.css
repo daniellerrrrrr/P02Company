@@ -28,7 +28,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -webkit-flex: 0 1 24rem;
   -ms-webkit-flex:  0 1 24rem;
 
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 0 1rem 2rem 1rem;
 }
 
 .cart-item-container > *{
@@ -45,10 +45,6 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex: 1 0 12rem;
   -webkit-flex: 1 0 12rem;
   -ms-webkit-flex:  1 0 12rem;
-}
-
-.on-style-guide{
-  margin-bottom: 1rem;
 }
 
 .colours-container{
@@ -81,17 +77,6 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   margin: 1rem;
 }
 
-/*
-.two-column {
-  width: 49%;
-  display: inline-block;
-} */
-
-.four-column {
-  width: 24%;
-  display: inline-block;
-}
-
 .box{
   display: flex;
   display: -webkit-flex;
@@ -119,6 +104,7 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
 }
+
 .center-box{
   display: flex;
   display: -webkit-flex;
@@ -149,17 +135,41 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex: 2 1 0;
 }
 
-.footer-column {
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0;
-}
-
 @media only screen and (max-width: 790px) {
-  .grow-1{
+.grow-1{
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     margin-left: 0;
+    width:100%;
+  }
+
+  .grow-1:last-child{
+    margin-left: 0;
+  }
+
+  .box, .center-box{
+    flex-direction: column;
+  }
+
+  .buttons .grow-1{
+    width: 100%;
+  }
+
+  .cart-sections .box{
+    flex-direction: row;
+  }
+
+  .cart-sections .grow-1{
+    width: 50%;
+  }
+
+  footer .box{
+    flex-direction: row;
+  }
+
+  footer .grow-1{
+    width: 50%;
+    margin-bottom: 1rem;
   }
 }
