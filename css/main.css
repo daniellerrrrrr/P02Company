@@ -13,6 +13,13 @@ body{
   margin: auto;
 }
 
+.container-product {
+  width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 main .container{
   min-height: 62vh;
   margin-bottom: 4rem;
@@ -26,7 +33,7 @@ main .container{
 
 /* navigation styling */
 .main-nav{
-  background-color: #446AAF;
+  background-color: #000;
   font-size: 0.8rem;
 }
 
@@ -120,6 +127,7 @@ main .container{
 
 /* section styling product page*/
 .product-description{
+  margin-top: 2rem;
   padding-bottom: 2rem;
   border-bottom: 2px #1E4CA1 dotted;
 }
@@ -528,6 +536,49 @@ p.tagline{
   margin-left: 2rem;
 }
 
+/* About us page */
+.hero-container#about-img {
+  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.75)),
+    center / cover no-repeat url("../images/spy-03.jpg")
+}
+
+.about-us {
+  margin-top: 0;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+.about-us img {
+  width: 30%;
+  height: auto;
+}
+
+.about-us h1 {
+  padding: 2em 0 1em 0;
+}
+
+/* product page */
+.detail-table {
+  border: solid 2px #d4d4d4;
+  text-align: center;
+  padding: 0;
+}
+
+.detail-table h5 {
+  margin: 0;
+}
+
+.detail-table p{
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.table-divider {
+  border-right: solid 2px #d4d4d4;
+}
+
+
+
 /* media queries */
 @media only screen and (max-width: 790px) {
   .element{
@@ -556,5 +607,9 @@ p.tagline{
 
   .nav-link-container{
     text-align: left;
+  }
+
+  .team {
+    margin-bottom: 2em;
   }
 }

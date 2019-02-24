@@ -139,6 +139,12 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   flex: 2 1 0;
 }
 
+.grow-1-table{
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
 @media only screen and (max-width: 790px) {
 .grow-1{
     -webkit-flex: 1 1 auto;
@@ -150,6 +156,10 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   .grow-1:last-child{
     margin-left: 0;
+  }
+
+  .grow-1-table{
+    width: 25%;
   }
 
   .box, .center-box{
