@@ -557,6 +557,10 @@ p.tagline{
   padding: 2em 0 1em 0;
 }
 
+.team {
+  width: 80%;
+}
+
 /* product page */
 .detail-table {
   border: solid 2px #d4d4d4;
@@ -578,8 +582,15 @@ p.tagline{
 }
 
 
-
 /* media queries */
+@media only screen and (max-width: 980px) {
+  .team {
+    width: 90%;
+  }
+}
+
+
+
 @media only screen and (max-width: 790px) {
   .element{
     margin: 2rem 0 0 0;
@@ -609,7 +620,8 @@ p.tagline{
     text-align: left;
   }
 
-  .team {
+  .team{
     margin-bottom: 2em;
   }
+
 }
