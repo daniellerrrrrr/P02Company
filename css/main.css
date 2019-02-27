@@ -16,7 +16,6 @@ body{
 .container-product {
   width: 80%;
   margin: auto;
-  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -433,7 +432,7 @@ footer label, footer h2, footer h3 {
 
 .hero-container#our-pans {
   background: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.75)),
-    center / cover no-repeat url("../images/pubg-01.jpg")
+    center / cover no-repeat url("../images/pubg-01.png")
 }
 
 .hero2#about-img {
