@@ -473,7 +473,7 @@ h1.hero{
 }
 
 .hero2-text {
-  padding:4rem 1rem;
+  padding:10rem 1rem;
   margin: auto;
   width: 80%;
 }
@@ -537,7 +537,7 @@ p.tagline{
 }
 
 /* About us page */
-.hero-container#about-img {
+.hero-container#aboutpage-img {
   background: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.75)),
     center / cover no-repeat url("../images/spy-03.jpg")
 }

@@ -91,6 +91,20 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   -ms-align-items: flex-start;
 }
 
+.detail-box{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+}
+
 .nav-box{
   display: flex;
   display: -webkit-flex;
